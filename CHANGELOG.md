@@ -1,5 +1,21 @@
 # Changelog
 
+## Passe 4 — Optimisation responsive mobile
+
+Application de `PROMPT_PASSE_4.md` en un seul commit. Aucun changement desktop, aucune modif HTML — tout se joue dans `assets/css/style.css`.
+
+**Méthode suivie :** tokens `:root` d'abord, puis règles base (`.btn`, `.nav-wrap`), puis fusion dans les blocs `@media` existants (aucun doublon de breakpoint), puis ajout du bloc `@media (max-width: 480px)` neuf.
+
+- **Tokens `:root`** : `--h1` min 2.5rem, `--h2` min 1.75rem, `--marquee` min 3rem, `--gutter` min 20px, `--section-y` min 64px pour un rythme mobile plus serré.
+- **Règles base** : `.btn { min-height: 44px }` (tap target Apple HIG), `.nav-wrap { padding-top: env(safe-area-inset-top) }` pour le notch iOS.
+- **`@media (max-width: 900px)`** (fusion) : hero 1 colonne avec uniquement l'image droite (`.hero__side--left { display: none }`), nav 64px + logo réduit, stats 3 cols horizontales + `border-top` au lieu de `border-left`, section-head compacté, split portrait aspect 4/5. Règle `.grid--stages-2x2` inline déplacée dans ce bloc pour éliminer le doublon 900px.
+- **`@media (max-width: 640px)`** (fusion) : feature-cards `aspect-ratio: 5/4`, course-cards padding 24px + `min-height: 0`, testimonials padding 24px, contact-form `font-size: 16px` + `min-height: 48px`, newsletter empilée verticalement, footer compact, CTA h2 adapté, marquees 28s.
+- **`@media (max-width: 480px)`** (nouveau) : hero CTAs en colonne pleine largeur, stats passent en 1 colonne avec chiffre 14vw.
+- **Validation** : agent Playwright headless testé sur `index.html`, `ecole.html`, `planning.html`, `contact.html` aux viewports iPhone SE 375×667, iPhone 14 Pro 393×852, Galaxy S22 360×780. Aucun scroll horizontal. Screenshots dans `.test-screenshots/`. Tous les critères de la checklist section 6 validés.
+- **Décision** : bloc `@media (max-width: 900px)` inline pour `.grid--stages-2x2` supprimé (ligne 356) et fusionné dans le bloc principal pour respecter la consigne "ne PAS dupliquer les blocs".
+
+---
+
 ## Passe 3 — Finition (polish visuel, perf, SEO, a11y)
 
 Application de `PROMPT_PASSE_3.md` en 3 commits. Objectif : ~95% fidélité vs Dancer + bases SEO/a11y/perf solides.
