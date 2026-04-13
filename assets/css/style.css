@@ -343,6 +343,18 @@ section { padding-block: var(--section-y); }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
 .grid--4 { grid-template-columns: repeat(4, 1fr); gap: 16px; }
 
+/* Variante 2x2 pour la section Stages de l'accueil */
+.grid--stages-2x2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.grid--stages-2x2 .feature-card--events {
+  aspect-ratio: 5/4;
+}
+@media (max-width: 900px) {
+  .grid--stages-2x2 { grid-template-columns: 1fr; }
+}
+
 .feature-card {
   position: relative;
   aspect-ratio: 3/4;
@@ -494,7 +506,7 @@ section { padding-block: var(--section-y); }
 .stat {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
   padding-left: 24px;
   border-left: 1px solid var(--border-strong);
 }
@@ -514,9 +526,12 @@ section { padding-block: var(--section-y); }
   margin-left: 2px;
 }
 .stat__label {
-  font-size: 13px;
-  color: var(--text-muted);
-  max-width: 20ch;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  max-width: 18ch;
+  line-height: 1.5;
 }
 
 /* ---------- 3.8 Portrait Amandine (feature split) ---------- */
@@ -648,12 +663,14 @@ section { padding-block: var(--section-y); }
 }
 .cta h2 {
   font-family: var(--font-display);
-  font-size: var(--h1);
+  font-size: clamp(3rem, 8vw, 7rem);
   line-height: 0.95;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  margin: 0 0 24px;
+  margin: 0 auto 24px;
+  max-width: 14ch;
   font-weight: 600;
+  text-wrap: balance;
 }
 .cta h2 em {
   font-style: italic;
@@ -665,7 +682,7 @@ section { padding-block: var(--section-y); }
 .cta p { max-width: 48ch; margin: 0 auto 32px; font-size: 1rem; }
 
 /* ---------- 3.11 Pre-footer marquee + footer ---------- */
-.prefoot-marquee { border-block: 1px solid var(--border); opacity: 0.6; }
+.prefoot-marquee { border-block: 1px solid var(--border); opacity: 0.75; }
 .prefoot-marquee .marquee__word {
   color: transparent;
   -webkit-text-stroke: 1.5px var(--text);
