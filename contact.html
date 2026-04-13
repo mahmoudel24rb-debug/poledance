@@ -8,6 +8,7 @@
   <link rel="icon" href="assets/images/logo-square-300.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSc.woff2" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,500;1,400;1,700&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -28,7 +29,7 @@
         <a href="contact.html" class="is-active">Contact</a>
       </nav>
       <div class="nav__cta">
-        <a class="btn btn--ghost" href="planning.html"><span class="btn__dot"></span> Réserver</a>
+        <a class="btn btn--ghost" href="planning.html"><span class="btn__dot" aria-hidden="true"></span> Réserver</a>
         <button class="nav__burger" aria-label="Menu"><span></span></button>
       </div>
     </header>
@@ -139,7 +140,7 @@
     <div class="site-footer__grid">
       <div class="site-footer__about">
         <div class="site-footer__brand">
-          <img src="assets/images/logo-square-300.png" alt="" width="36" height="36">
+          <img src="assets/images/logo-square-300.png" alt="" width="36" height="36" loading="lazy" decoding="async">
           <span>Pole Dance Tours</span>
         </div>
         <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance.</p>

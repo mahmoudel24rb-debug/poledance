@@ -8,6 +8,7 @@
   <link rel="icon" href="assets/images/logo-square-300.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSc.woff2" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,500;1,400;1,700&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -29,7 +30,7 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="nav__cta">
-        <a class="btn btn--ghost" href="planning.html"><span class="btn__dot"></span> Réserver</a>
+        <a class="btn btn--ghost" href="planning.html"><span class="btn__dot" aria-hidden="true"></span> Réserver</a>
         <button class="nav__burger" aria-label="Menu"><span></span></button>
       </div>
     </header>
@@ -38,7 +39,7 @@
   <!-- HERO 3 colonnes -->
   <section class="hero">
     <div class="hero__side hero__side--left">
-      <img src="assets/images/home-cours-pole-dance.jpg" alt="Cours de pole dance en groupe au studio Parc Beauregard" width="480" height="620">
+      <img src="assets/images/home-cours-pole-dance.jpg" alt="Cours de pole dance en groupe au studio Parc Beauregard" width="480" height="620" fetchpriority="high" decoding="async">
     </div>
     <div class="hero__content">
       <span class="eyebrow">· Être forte · Avoir fun ·</span>
@@ -50,7 +51,7 @@
       </div>
     </div>
     <div class="hero__side hero__side--right">
-      <img src="assets/images/amandine-portrait-home.jpg" alt="Amandine Janinet, professeure de pole dance" width="480" height="620">
+      <img src="assets/images/amandine-portrait-home.jpg" alt="Amandine Janinet, professeure de pole dance" width="480" height="620" fetchpriority="high" decoding="async">
     </div>
     <a class="hero__scroll" href="#pourquoi">Scroll ↓</a>
   </section>
@@ -81,7 +82,7 @@
       </div>
       <div class="grid grid--3">
         <article class="feature-card">
-          <img class="feature-card__bg" src="assets/images/home-cours-pole-dance.jpg" alt="" width="480" height="640">
+          <img class="feature-card__bg" src="assets/images/home-cours-pole-dance.jpg" alt="" width="480" height="640" loading="lazy" decoding="async">
           <span class="feature-card__num">01</span>
           <div class="feature-card__body">
             <h3>Ça booste la confiance</h3>
@@ -89,7 +90,7 @@
           </div>
         </article>
         <article class="feature-card">
-          <img class="feature-card__bg" src="assets/images/studio-parc-beauregard.jpg" alt="" width="480" height="640">
+          <img class="feature-card__bg" src="assets/images/studio-parc-beauregard.jpg" alt="" width="480" height="640" loading="lazy" decoding="async">
           <span class="feature-card__num">02</span>
           <div class="feature-card__body">
             <h3>Un sport ludique</h3>
@@ -97,7 +98,7 @@
           </div>
         </article>
         <article class="feature-card">
-          <img class="feature-card__bg" src="assets/images/amandine-portrait-home.jpg" alt="" width="480" height="640">
+          <img class="feature-card__bg" src="assets/images/amandine-portrait-home.jpg" alt="" width="480" height="640" loading="lazy" decoding="async">
           <span class="feature-card__num">03</span>
           <div class="feature-card__body">
             <h3>Accessible à tous</h3>
@@ -177,7 +178,7 @@
       </div>
       <div class="grid grid--stages-2x2">
         <article class="feature-card feature-card--events">
-          <img class="feature-card__bg" src="assets/images/home-cours-pole-dance.jpg" alt="" width="480" height="600">
+          <img class="feature-card__bg" src="assets/images/home-cours-pole-dance.jpg" alt="" width="480" height="600" loading="lazy" decoding="async">
           <span class="feature-card__tag">Stage intensif</span>
           <div class="feature-card__body">
             <h3>Pole techniques</h3>
@@ -186,7 +187,7 @@
           </div>
         </article>
         <article class="feature-card feature-card--events">
-          <img class="feature-card__bg" src="assets/images/studio-parc-beauregard.jpg" alt="" width="480" height="600">
+          <img class="feature-card__bg" src="assets/images/studio-parc-beauregard.jpg" alt="" width="480" height="600" loading="lazy" decoding="async">
           <span class="feature-card__tag">Stage thématique</span>
           <div class="feature-card__body">
             <h3>Pole à thèmes</h3>
@@ -195,7 +196,7 @@
           </div>
         </article>
         <article class="feature-card feature-card--events">
-          <img class="feature-card__bg" src="assets/images/amandine-portrait-home.jpg" alt="" width="480" height="600">
+          <img class="feature-card__bg" src="assets/images/amandine-portrait-home.jpg" alt="" width="480" height="600" loading="lazy" decoding="async">
           <span class="feature-card__tag">Yoga &amp; souplesse</span>
           <div class="feature-card__body">
             <h3>Yoga &amp; stretching</h3>
@@ -204,7 +205,7 @@
           </div>
         </article>
         <article class="feature-card feature-card--events">
-          <img class="feature-card__bg" src="assets/images/amandine-portrait-ecole.jpg" alt="" width="480" height="600">
+          <img class="feature-card__bg" src="assets/images/amandine-portrait-ecole.jpg" alt="" width="480" height="600" loading="lazy" decoding="async">
           <span class="feature-card__tag">Camp 4 jours</span>
           <div class="feature-card__body">
             <h3>Camp Pole Dance</h3>
@@ -264,7 +265,7 @@
     <div class="container">
       <div class="split">
         <div class="split__visual">
-          <img src="assets/images/amandine-portrait-home.jpg" alt="Amandine Janinet, professeure de pole dance" width="640" height="853">
+          <img src="assets/images/amandine-portrait-home.jpg" alt="Amandine Janinet, professeure de pole dance" width="640" height="853" loading="lazy" decoding="async">
         </div>
         <div class="split__content">
           <span class="eyebrow">· Avec qui ? ·</span>
@@ -353,7 +354,7 @@
     <div class="site-footer__grid">
       <div class="site-footer__about">
         <div class="site-footer__brand">
-          <img src="assets/images/logo-square-300.png" alt="" width="36" height="36">
+          <img src="assets/images/logo-square-300.png" alt="" width="36" height="36" loading="lazy" decoding="async">
           <span>Pole Dance Tours</span>
         </div>
         <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance. On vous guide à chaque étape.</p>
