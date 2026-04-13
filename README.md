@@ -1,7 +1,6 @@
 # Pole Dance Tours — maquette site
 
 Maquette statique multi-pages pour la refonte de [poledancetours.fr](https://poledancetours.fr/).
-Inspirée de la template Framer **Dancer** ([dancer-template.framer.website](https://dancer-template.framer.website/)),
 adaptée au contenu et aux images de Pole Dance Tours.
 
 ## Stack

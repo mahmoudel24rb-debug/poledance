@@ -8,130 +8,71 @@
   <link rel="icon" href="assets/images/logo-square-300.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
   <header class="site-header">
-    <a href="index.html" class="brand">
-      <img src="assets/images/logo-square-300.png" alt="Pole Dance Tours">
-      <span class="brand-text">
-        <small>Be strong · have fun</small>
-        Pole Dance Tours
-      </span>
-    </a>
-    <nav class="nav">
-      <a href="index.html" class="active">Accueil</a>
-      <a href="ecole.html">L'école</a>
-      <a href="planning.html">Planning &amp; Tarifs</a>
-      <a href="stages.html">Stages &amp; Camps</a>
-      <a href="news.html">News</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="header-cta">
-      <a href="planning.html" class="btn btn-primary">Réserver <span class="arrow">→</span></a>
-      <button class="burger" aria-label="Menu"><span></span></button>
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo-square-300.png" alt="Pole Dance Tours">
+        <span>Pole Dance Tours</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="ecole.html">L'école</a>
+        <a href="planning.html">Planning</a>
+        <a href="stages.html">Stages</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="planning.html" class="btn btn-ghost">Réserver <span class="arrow"></span></a>
+        <button class="burger" aria-label="Menu"><span></span></button>
+      </div>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-top">
-      <div class="container">
-        <span class="eyebrow">Be strong · Have fun</span>
-        <p>Là où le rythme rencontre l'imagination — et où chaque corps trouve sa force.</p>
-      </div>
-    </div>
-    <div class="container">
-      <h1 class="hero-display">
-        Pole Dance<br>
-        <span class="italic">Tours</span>
-      </h1>
-      <div class="hero-bottom">
-        <p class="desc">L'école de pole dance d'Amandine Janinet, nichée dans le Parc Beauregard à Rochecorbon. Pour pratiquer une activité <em>renversante</em>, à ton rythme.</p>
-        <div class="hero-cta-row">
-          <a href="planning.html" class="btn btn-primary">Voir tous les cours <span class="arrow">→</span></a>
-          <a href="ecole.html" class="btn btn-ghost">L'école <span class="arrow">→</span></a>
-        </div>
+  <section class="hero" style="--hero-image: url('assets/images/home-cours-pole-dance.jpg')">
+    <div class="hero-inner">
+      <span class="hero-kicker">Be strong · have fun</span>
+      <h1>Pole Dance <em>Tours</em></h1>
+      <p>Envie de pratiquer une activité renversante ? Rejoins notre studio à Rochecorbon, niché dans un écrin de verdure à deux pas de Tours.</p>
+      <div class="hero-buttons">
+        <a href="planning.html" class="btn btn-primary">Découvrir le planning <span class="arrow"></span></a>
+        <a href="ecole.html" class="btn btn-ghost">À propos de l'école</a>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section>
+  <!-- POURQUOI — 3 numbered cards -->
+  <section class="section">
     <div class="container">
-      <div class="about reveal">
+      <div class="section-head">
         <div>
-          <span class="eyebrow">À propos</span>
-          <h2 style="margin-top:24px">Découvre le cœur d'une discipline <em style="color:var(--accent)">renversante</em></h2>
-          <div class="meta">
-            <div class="meta-row"><span>Studio</span><span>Parc Beauregard, Rochecorbon</span></div>
-            <div class="meta-row"><span>Barres</span><span>5 × X-Pole Xpert Pro</span></div>
-            <div class="meta-row"><span>Capacité</span><span>10 élèves max / cours</span></div>
-            <div class="meta-row"><span>Premier cours</span><span>15 €</span></div>
-          </div>
+          <span class="section-label">Pourquoi la pole dance ?</span>
+          <h2>Une discipline qui renforce le corps et la confiance</h2>
         </div>
-        <div>
-          <p>La pole dance est une discipline qui a gagné en popularité aux débuts des années 2000 grâce à son mélange unique d'éléments artistiques et sportifs. Elle fusionne danse, cirque et gymnastique.</p>
-          <p>Tu vas y travailler ta force, ta souplesse, ton endurance et ta coordination. Et surtout : c'est accessible à tous, indépendamment de ton niveau initial. Une activité évolutive et ludique pour renforcer le corps, prendre confiance et favoriser la remise en forme.</p>
-          <p>À Pole Dance Tours, c'est un studio à taille humaine — 10 élèves par cours maximum — où la qualité de l'enseignement et la bonne humeur sont la règle.</p>
-        </div>
+        <a href="ecole.html" class="btn btn-ghost">En savoir plus <span class="arrow"></span></a>
       </div>
-    </div>
-  </section>
-
-  <!-- VALUES 3-COL -->
-  <section style="padding-top:0">
-    <div class="container">
-      <div class="values reveal">
-        <div class="value">
-          <div class="num">/ 01</div>
-          <h3>Confiance</h3>
-          <p>Maîtriser des figures autour de la barre renforce la confiance en ses capacités, la posture et une meilleure perception de soi. On repousse ses limites et on développe une vraie assurance.</p>
-        </div>
-        <div class="value">
-          <div class="num">/ 02</div>
-          <h3>Ludique</h3>
-          <p>La pole mélange art et sport. On travaille force, souplesse et coordination sans s'en rendre compte, comme un enfant dans une aire de jeux : on se dépense en s'amusant. Stimulant et <em>renversant</em>.</p>
-        </div>
-        <div class="value">
-          <div class="num">/ 03</div>
-          <h3>Accessible</h3>
-          <p>« Je ne suis pas souple, pas forte, pas sportive » — peu importe. Débutante ou déjà initiée, tu apprends et progresses à ton rythme. Aucun prérequis n'est demandé pour commencer.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INSTRUCTOR (Amandine) -->
-  <section>
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Avec qui</span>
-        <h2>Ta professeure améliore ta <em style="color:var(--accent); font-style:italic">pratique</em>.</h2>
-      </div>
-      <div class="instructor reveal">
-        <div class="media">
-          <img src="assets/images/amandine-portrait-home.jpg" alt="Amandine Janinet">
-        </div>
-        <div class="instructor-content">
-          <span class="eyebrow">Amandine Janinet · Pole &amp; fitness</span>
-          <h2>Amandine <em style="color:var(--accent); font-style:italic">Janinet</em></h2>
-          <p>Amandine a trouvé sa passion dans la pole dance en 2013 à Dijon. Devenue professeure après trois ans de pratique, elle a consolidé son expertise à Paris avec Doris Arnold en 2016.</p>
-          <p>Diplômée éducatrice sportive, elle enseigne aussi le yoga, le pilates, le HIIT et le stretching. Après huit ans d'enseignement en Loir-et-Cher, elle a ouvert son propre studio à Tours.</p>
-          <div class="badges">
-            <span class="badge">BPJEPS AGFF</span>
-            <span class="badge">Formation Doris Arnold</span>
-            <span class="badge">Pilates matwork 1·2</span>
-            <span class="badge">Yoga n°1 &amp; 2</span>
-            <span class="badge">11 ans de pratique</span>
-            <span class="badge">8 ans d'enseignement</span>
-          </div>
-          <div style="margin-top:36px">
-            <a href="ecole.html" class="btn btn-ghost">En savoir plus <span class="arrow">→</span></a>
-          </div>
-        </div>
+      <div class="about-grid">
+        <article class="about-card" style="background-image: url('assets/images/home-cours-pole-dance.jpg')">
+          <span class="num">01</span>
+          <h3>Ça booste la confiance en soi</h3>
+          <p>On y entre timide et on oublie vite ses complexes. Maîtriser chaque figure renforce posture et assurance.</p>
+        </article>
+        <article class="about-card" style="background-image: url('assets/images/studio-parc-beauregard.jpg')">
+          <span class="num">02</span>
+          <h3>C'est un sport ludique</h3>
+          <p>Un mélange unique de danse, cirque et gymnastique. On se dépense sans s'en rendre compte, parce qu'on s'amuse.</p>
+        </article>
+        <article class="about-card" style="background-image: url('assets/images/amandine-portrait-home.jpg')">
+          <span class="num">03</span>
+          <h3>Accessible à tous</h3>
+          <p>Aucun prérequis : pas besoin d'être souple ou sportive. On apprend et on progresse à son propre rythme.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -139,205 +80,167 @@
   <!-- MARQUEE -->
   <div class="marquee">
     <div class="marquee-track">
-      <span>Be strong <span class="dot">✦</span></span>
-      <span class="filled">Have fun <span class="dot">✦</span></span>
-      <span>Pole dance <span class="dot">✦</span></span>
-      <span class="filled">Tours <span class="dot">✦</span></span>
-      <span>Be strong <span class="dot">✦</span></span>
-      <span class="filled">Have fun <span class="dot">✦</span></span>
-      <span>Pole dance <span class="dot">✦</span></span>
-      <span class="filled">Tours <span class="dot">✦</span></span>
+      <span>Be Strong</span>
+      <span class="accent">Have Fun</span>
+      <span>Be Strong</span>
+      <span class="accent">Have Fun</span>
     </div>
   </div>
 
-  <!-- CLASSES (4-card grid) -->
-  <section>
+  <!-- FEATURE — Amandine -->
+  <section class="section">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Les cours</span>
-        <h2>Quatre niveaux, une seule <em style="color:var(--accent); font-style:italic">passion</em>.</h2>
-        <p>Chaque cours dure 1h et accueille 10 personnes maximum. Tu choisis le niveau qui te correspond — Amandine est là pour t'aiguiller.</p>
-      </div>
-      <div class="grid-4 reveal">
-        <a href="planning.html" class="class-card">
-          <div class="thumb">
-            <span class="level">Débutant 1</span>
-            <img src="assets/images/home-cours-pole-dance.jpg" alt="">
-          </div>
-          <h3>Pole débutants 1</h3>
-          <p>Aucun prérequis, pas besoin d'être sportif·ve. On travaille les figures et transitions de base pour te renforcer en douceur.</p>
-          <span class="more">Découvrir</span>
-        </a>
-        <a href="planning.html" class="class-card">
-          <div class="thumb">
-            <span class="level">Débutant 2</span>
-            <img src="assets/images/amandine-portrait-home.jpg" alt="">
-          </div>
-          <h3>Pole débutant 2</h3>
-          <p>Tu maîtrises les spins et tricks de base ? On ajoute les inversions et le mode spinning pour passer un cap.</p>
-          <span class="more">Découvrir</span>
-        </a>
-        <a href="planning.html" class="class-card">
-          <div class="thumb">
-            <span class="level">Inter 1/2</span>
-            <img src="assets/images/studio-parc-beauregard.jpg" alt="">
-          </div>
-          <h3>Pole inter 1/2</h3>
-          <p>On prend de la hauteur : shoulder mount, ayesha, jade… des transitions plus techniques et une vraie progression en force.</p>
-          <span class="more">Découvrir</span>
-        </a>
-        <a href="planning.html" class="class-card">
-          <div class="thumb">
-            <span class="level">Tous niveaux</span>
-            <img src="assets/images/amandine-portrait-ecole.jpg" alt="">
-          </div>
-          <h3>Pole tous niveaux</h3>
-          <p>De l'initiation au plus confirmé. Idéal pour découvrir, ou compléter ton créneau habituel par un cours plus libre.</p>
-          <span class="more">Découvrir</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EVENTS / STAGES -->
-  <section style="padding-top:0">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Stages &amp; camps</span>
-        <h2>Les <em style="color:var(--accent); font-style:italic">prochains</em> rendez-vous</h2>
-        <p>Sessions intensives pendant les vacances scolaires et camps de 4 jours en villa avec piscine.</p>
-      </div>
-      <div class="events reveal">
-        <a href="stages.html" class="event">
-          <div class="date">Vacances Toussaint</div>
-          <h3>Stage Pole Technique</h3>
-          <span class="place">Studio Parc Beauregard · Rochecorbon</span>
-          <span class="arrow-ico">→</span>
-        </a>
-        <a href="stages.html" class="event">
-          <div class="date">Vacances Hiver</div>
-          <h3>Stage Pole Exotic &amp; Doublette</h3>
-          <span class="place">Studio Parc Beauregard · Rochecorbon</span>
-          <span class="arrow-ico">→</span>
-        </a>
-        <a href="stages.html" class="event">
-          <div class="date">Printemps 2026</div>
-          <h3>Camp Pole Dance · 4 jours</h3>
-          <span class="place">Villa avec piscine · Région à découvrir</span>
-          <span class="arrow-ico">→</span>
-        </a>
-        <a href="stages.html" class="event">
-          <div class="date">Été 2026</div>
-          <h3>Camp Yoga &amp; Pole Flow</h3>
-          <span class="place">Villa avec piscine · Pension complète</span>
-          <span class="arrow-ico">→</span>
-        </a>
+      <div class="feature">
+        <div class="visual" style="background-image: url('assets/images/amandine-portrait-home.jpg')"></div>
+        <div>
+          <span class="section-label">Avec qui ?</span>
+          <h2>Amandine Janinet, <em>votre prof</em></h2>
+          <p>Amandine a trouvé sa passion dans la pole dance en 2013 à Dijon, sa ville natale. Devenue professeure après trois ans de pratique, elle a consolidé son expertise en suivant une formation professionnelle à Paris avec Doris Arnold en 2016.</p>
+          <p>Son désir d'innover l'a conduit à organiser des camps de pole dance, offrant à ses élèves des mini-vacances sportives à travers la France, mêlant plaisir, sport et rencontres.</p>
+          <ul class="pill-list">
+            <li>BPJEPS AGFF</li>
+            <li>Formation Doris Arnold</li>
+            <li>Certifiée Pilates</li>
+            <li>Certifiée Yoga</li>
+          </ul>
+          <a href="ecole.html" class="btn btn-primary">Découvrir l'école <span class="arrow"></span></a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- STATS -->
-  <section style="padding-top:0">
+  <section class="section">
     <div class="container">
-      <div class="stats reveal">
-        <div class="stat">
-          <div class="stat-num">11<span class="unit">ans</span></div>
-          <div class="stat-label">de pratique de la pole dance</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">8<span class="unit">ans</span></div>
-          <div class="stat-label">d'enseignement pole &amp; fitness</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">5<span class="unit">barres</span></div>
-          <div class="stat-label">X-Pole Xpert Pro · 3m15 sous plafond</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">10<span class="unit">max</span></div>
-          <div class="stat-label">élèves par cours, jamais plus</div>
-        </div>
+      <div class="stats">
+        <h2>Du sport, de l'énergie et beaucoup de bonne humeur</h2>
+        <div class="stat"><div class="num">11<span style="color: var(--accent)">+</span></div><div class="label">Ans de pratique</div></div>
+        <div class="stat"><div class="num">8<span style="color: var(--accent)">+</span></div><div class="label">Ans d'enseignement</div></div>
+        <div class="stat"><div class="num">10<span style="color: var(--accent)">/</span>cours</div><div class="label">Élèves maximum</div></div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section>
+  <!-- COURS (4 cartes style team grid) -->
+  <section class="section">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Témoignages</span>
-        <h2>Ce qu'en disent <em style="color:var(--accent); font-style:italic">les élèves</em>.</h2>
+      <div class="section-head">
+        <div>
+          <span class="section-label">Les cours</span>
+          <h2>Un parcours adapté à chaque niveau</h2>
+        </div>
+        <a href="planning.html" class="btn btn-ghost">Voir le planning <span class="arrow"></span></a>
+      </div>
+      <div class="classes-grid">
+        <article class="class-card">
+          <span class="num">01</span>
+          <h3>Pole dance débutants 1</h3>
+          <p>Ta 1ère année. Aucun prérequis : on travaille les figures et transitions de base pour te renforcer et t'emmener au niveau supérieur.</p>
+        </article>
+        <article class="class-card">
+          <span class="num">02</span>
+          <h3>Pole dance débutants 2</h3>
+          <p>Tu maîtrises les spins et tricks de base. On passe aux figures inversées et au mode spinning.</p>
+        </article>
+        <article class="class-card">
+          <span class="num">03</span>
+          <h3>Pole dance inter 1/2</h3>
+          <p>On prend de la hauteur. Figures en force (shoulder mount, ayesha) et en souplesse (jade), transitions plus techniques.</p>
+        </article>
+        <article class="class-card">
+          <span class="num">04</span>
+          <h3>Pole dance tous niveaux</h3>
+          <p>Pour tout le monde, de l'initiation au plus confirmé. Un format ouvert, idéal pour progresser ensemble.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE 2 -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Pole Dance</span>
+      <span class="accent">Tours</span>
+      <span>Pole Dance</span>
+      <span class="accent">Tours</span>
+    </div>
+  </div>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-label">Témoignages</span>
+          <h2>Elles en parlent mieux que nous</h2>
+        </div>
       </div>
       <div class="testimonials">
-        <div class="testimonial reveal">
-          <div class="stars">★ ★ ★ ★ ★</div>
-          <p>« J'ai redécouvert la joie de refaire du sport avec Amandine. La pole dance m'a permis de re-découvrir mon rapport au corps et de prendre confiance en mes capacités. Coach diplômée, Amandine sait mettre à l'aise avec une pédagogie et une bonne humeur garanties. Le plus beau moment de ma semaine ! »</p>
+        <article class="testimonial">
+          <p class="quote">« J'ai redécouvert la joie de refaire du sport avec Amandine. La pole dance est mon activité passion, elle m'a permis de re-découvrir mon rapport au corps et de prendre confiance en mes capacités physiques. C'est toujours un ressourcement de pratiquer dans un cadre naturel, le plus beau moment de ma semaine ! »</p>
           <div class="author">
-            <div class="author-avatar">L</div>
+            <div class="avatar">L</div>
             <div>
-              <div class="author-name">Laure-Anne Lefèvre</div>
-              <div class="author-meta">Élève · cours hebdo</div>
+              <div class="name">Laure-Anne Lefevre</div>
+              <div class="role-small">Élève</div>
             </div>
           </div>
-        </div>
-        <div class="testimonial reveal">
-          <div class="stars">★ ★ ★ ★ ★</div>
-          <p>« Les stages avec Amandine sont riches en contenu et en dynamique de groupe. Sur 4 jours intenses on apprend à se connaître, se motiver et se dépasser. Ce type de stage nous prouve notre capacité à repousser nos limites. Je sais quoi demander pour mes 40 ans ! »</p>
+        </article>
+        <article class="testimonial">
+          <p class="quote">« Les stages pole dance avec Amandine sont riches en contenu et en dynamique de groupe. Sur 4 jours intenses on apprend à se connaître, s'accompagner, se motiver. Ce type de stage nous prouve notre capacité à nous dépasser. Je sais quoi demander pour mes 40 ans ! »</p>
           <div class="author">
-            <div class="author-avatar">V</div>
+            <div class="avatar">V</div>
             <div>
-              <div class="author-name">Vanessa Pingard</div>
-              <div class="author-meta">Stagiaire · 4 jours intensifs</div>
+              <div class="name">Vanessa Pingard</div>
+              <div class="role-small">Stagiaire</div>
             </div>
           </div>
-        </div>
-        <div class="testimonial reveal">
-          <div class="stars">★ ★ ★ ★ ★</div>
-          <p>« J'ai suivi un stage de 4 jours avec Amandine et un groupe de poleuses incroyable, une superbe aventure hors du temps. Amandine est passionnée, rigoureuse et polyvalente. Elle nous transporte de la pole flow à l'exotique en passant par le yoga avec aisance et professionnalisme. »</p>
+        </article>
+        <article class="testimonial">
+          <p class="quote">« J'ai suivi un stage de 4 jours avec Amandine et un groupe de poleuses incroyable : une superbe aventure, hors du temps. Amandine est passionnée, rigoureuse et polyvalente. Elle nous transporte de la pole flow à l'exotique en passant par le yoga avec professionnalisme. »</p>
           <div class="author">
-            <div class="author-avatar">S</div>
+            <div class="avatar">S</div>
             <div>
-              <div class="author-name">Sabrina Gautier</div>
-              <div class="author-meta">Camp pole dance</div>
+              <div class="name">Sabrina Gautier</div>
+              <div class="role-small">Stagiaire</div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- NEWSLETTER CTA -->
-  <section style="padding-top:0">
+  <!-- CTA -->
+  <section class="cta">
     <div class="container">
-      <div class="newsletter-band reveal">
-        <span class="eyebrow">Reste informée</span>
-        <h2>Rejoins la <em>communauté</em> Pole Dance Tours</h2>
-        <p>Inscris-toi pour recevoir les annonces de nouveaux cours, stages et camps — et ne plus rien rater de la saison.</p>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Ton email" required>
-          <button type="submit">S'inscrire</button>
-        </form>
-      </div>
+      <h2>Envie de vivre la <em>pole dance</em> ?</h2>
+      <p>Rejoins-nous à Rochecorbon pour un premier cours à 15 €. Be strong, have fun.</p>
+      <a href="planning.html" class="btn btn-accent">Réserver ton 1er cours <span class="arrow"></span></a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="index.html" class="brand">
-            <img src="assets/images/logo-square-300.png" alt="Pole Dance Tours">
-            <span><small>Be strong · have fun</small>Pole Dance Tours</span>
-          </a>
-          <p>Découvre la magie de la pole dance dans notre école. Renforce ton corps, développe ta confiance, prends du plaisir.</p>
+      <div class="footer-grid">
+        <div class="about-col">
+          <div class="footer-brand">
+            <img src="assets/images/logo-square-300.png" alt="">
+            <span>Pole Dance Tours</span>
+          </div>
+          <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance. On vous guide à chaque étape.</p>
+          <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Merci ✓'">
+            <input type="email" placeholder="Votre email" aria-label="Email">
+            <button type="submit">S'inscrire</button>
+          </form>
         </div>
         <div>
-          <h4>Pages</h4>
+          <h4>Navigation</h4>
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="ecole.html">L'école</a></li>
-            <li><a href="planning.html">Planning &amp; Tarifs</a></li>
-            <li><a href="stages.html">Stages &amp; Camps</a></li>
+            <li><a href="planning.html">Planning &amp; tarifs</a></li>
+            <li><a href="stages.html">Stages &amp; camps</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -345,26 +248,23 @@
         <div>
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
             <li><a href="mailto:poledancetours37@gmail.com">poledancetours37@gmail.com</a></li>
-            <li>1 quai de la Loire,<br>37210 Rochecorbon</li>
+            <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
+            <li>1 quai de la Loire<br>37210 Rochecorbon</li>
           </ul>
         </div>
         <div>
           <h4>Réseaux</h4>
           <ul>
-            <li><a href="https://www.instagram.com/poledancetours" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://instagram.com/poledancetours" target="_blank" rel="noopener">Instagram</a></li>
             <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
             <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="footer-big">Pole Dance <em>Tours</em></div>
-
       <div class="footer-bottom">
-        <div>© 2026 Pole Dance Tours. Tous droits réservés.</div>
-        <div class="legal">
+        <span>© 2026 Pole Dance Tours — Be Strong, Have Fun</span>
+        <div>
           <a href="#">Mentions légales</a>
           <a href="#">Cookies</a>
           <a href="#">Vie privée</a>
