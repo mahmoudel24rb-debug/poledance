@@ -8,48 +8,48 @@
   <link rel="icon" href="assets/images/logo-square-300.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,500;1,400;1,700&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="brand">
-        <img src="assets/images/logo-square-300.png" alt="Pole Dance Tours">
+  <div class="nav-wrap">
+    <header class="nav">
+      <a class="nav__logo" href="index.html">
+        <img src="assets/images/logo-square-300.png" alt="" width="28" height="28">
         <span>Pole Dance Tours</span>
       </a>
-      <nav class="nav">
+      <nav class="nav__links">
         <a href="index.html">Accueil</a>
         <a href="ecole.html">L'école</a>
         <a href="planning.html">Planning</a>
         <a href="stages.html">Stages</a>
         <a href="news.html">News</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="is-active">Contact</a>
       </nav>
-      <div class="header-cta">
-        <a href="planning.html" class="btn btn-ghost">Réserver <span class="arrow"></span></a>
-        <button class="burger" aria-label="Menu"><span></span></button>
+      <div class="nav__cta">
+        <a class="btn btn--ghost" href="planning.html"><span class="btn__dot"></span> Réserver</a>
+        <button class="nav__burger" aria-label="Menu"><span></span></button>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <!-- PAGE HERO -->
   <section class="page-hero" style="background-image: url('assets/images/studio-parc-beauregard.jpg')">
-    <div class="container">
-      <span class="section-label">Contact</span>
+    <div class="page-hero__inner">
+      <span class="eyebrow">· Contact ·</span>
       <h1>On est là pour <em>répondre</em></h1>
       <p>On t'aide à commencer ton aventure dans le monde captivant du pole dance. Une question ? Écris-nous.</p>
     </div>
   </section>
 
   <!-- CONTACT GRID -->
-  <section class="section">
+  <section>
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info">
-          <span class="section-label">Coordonnées</span>
-          <h2 style="font-size: clamp(30px, 3.6vw, 48px); margin: 18px 0 10px;">Rejoins-nous au studio</h2>
+          <span class="eyebrow">· Coordonnées ·</span>
+          <h2 style="margin: 20px 0 12px;">Rejoins-nous au <em>studio</em></h2>
           <p>Parc Beauregard, niché dans un écrin de verdure à une minute de la Guinguette de Rochecorbon et de la sortie Tours Nord / Vouvray.</p>
           <ul>
             <li>
@@ -97,80 +97,91 @@
             <label for="message">Message</label>
             <textarea id="message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Envoyer le message <span class="arrow"></span></button>
+          <button type="submit" class="btn btn--primary">Envoyer le message</button>
         </form>
       </div>
     </div>
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>1 quai de la Loire</span>
-      <span class="accent">Rochecorbon</span>
-      <span>37210</span>
-      <span class="accent">Pole Dance Tours</span>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__word">1 quai de la Loire</span>
+      <span class="marquee__word marquee__word--outline">Rochecorbon</span>
+      <span class="marquee__word">37210</span>
+      <span class="marquee__word marquee__word--outline">Pole Dance Tours</span>
+      <span class="marquee__word">1 quai de la Loire</span>
+      <span class="marquee__word marquee__word--outline">Rochecorbon</span>
     </div>
   </div>
 
   <!-- CTA -->
   <section class="cta" style="background-image: url('assets/images/home-cours-pole-dance.jpg')">
-    <div class="container">
+    <div class="cta__inner">
       <h2>Be <em>strong</em>, have fun</h2>
       <p>On a hâte de te rencontrer au studio.</p>
-      <a href="planning.html" class="btn btn-accent">Voir le planning <span class="arrow"></span></a>
+      <a class="btn btn--outline" href="planning.html">Voir le planning</a>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="about-col">
-          <div class="footer-brand">
-            <img src="assets/images/logo-square-300.png" alt="">
-            <span>Pole Dance Tours</span>
-          </div>
-          <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance.</p>
-          <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Merci ✓'">
-            <input type="email" placeholder="Votre email" aria-label="Email">
-            <button type="submit">S'inscrire</button>
-          </form>
-        </div>
-        <div>
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="ecole.html">L'école</a></li>
-            <li><a href="planning.html">Planning &amp; tarifs</a></li>
-            <li><a href="stages.html">Stages &amp; camps</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:poledancetours37@gmail.com">poledancetours37@gmail.com</a></li>
-            <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
-            <li>1 quai de la Loire<br>37210 Rochecorbon</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Réseaux</h4>
-          <ul>
-            <li><a href="https://instagram.com/poledancetours" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
-          </ul>
-        </div>
+  <div class="prefoot-marquee">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__word marquee__word--outline">Pole Dance Tours</span>
+        <span class="marquee__word marquee__word--outline">— Rochecorbon —</span>
+        <span class="marquee__word marquee__word--outline">Pole Dance Tours</span>
+        <span class="marquee__word marquee__word--outline">— Rochecorbon —</span>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 Pole Dance Tours — Be Strong, Have Fun</span>
-        <div>
-          <a href="#">Mentions légales</a>
-          <a href="#">Cookies</a>
-          <a href="#">Vie privée</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <div class="site-footer__about">
+        <div class="site-footer__brand">
+          <img src="assets/images/logo-square-300.png" alt="" width="36" height="36">
+          <span>Pole Dance Tours</span>
         </div>
+        <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance.</p>
+        <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Merci ✓'">
+          <input type="email" placeholder="Votre email" aria-label="Email">
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ecole.html">L'école</a></li>
+          <li><a href="planning.html">Planning &amp; tarifs</a></li>
+          <li><a href="stages.html">Stages &amp; camps</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:poledancetours37@gmail.com">poledancetours37@gmail.com</a></li>
+          <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
+          <li>1 quai de la Loire<br>37210 Rochecorbon</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="https://instagram.com/poledancetours" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 Pole Dance Tours — Be Strong, Have Fun</span>
+      <div>
+        <a href="#">Mentions légales</a>
+        <a href="#">Cookies</a>
+        <a href="#">Vie privée</a>
       </div>
     </div>
   </footer>

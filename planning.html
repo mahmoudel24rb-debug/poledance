@@ -8,214 +8,235 @@
   <link rel="icon" href="assets/images/logo-square-300.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,500;1,400;1,700&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="brand">
-        <img src="assets/images/logo-square-300.png" alt="Pole Dance Tours">
+  <div class="nav-wrap">
+    <header class="nav">
+      <a class="nav__logo" href="index.html">
+        <img src="assets/images/logo-square-300.png" alt="" width="28" height="28">
         <span>Pole Dance Tours</span>
       </a>
-      <nav class="nav">
+      <nav class="nav__links">
         <a href="index.html">Accueil</a>
         <a href="ecole.html">L'école</a>
-        <a href="planning.html" class="active">Planning</a>
+        <a href="planning.html" class="is-active">Planning</a>
         <a href="stages.html">Stages</a>
         <a href="news.html">News</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="header-cta">
-        <a href="planning.html" class="btn btn-ghost">Réserver <span class="arrow"></span></a>
-        <button class="burger" aria-label="Menu"><span></span></button>
+      <div class="nav__cta">
+        <a class="btn btn--ghost" href="planning.html"><span class="btn__dot"></span> Réserver</a>
+        <button class="nav__burger" aria-label="Menu"><span></span></button>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <!-- PAGE HERO -->
   <section class="page-hero" style="background-image: url('assets/images/home-cours-pole-dance.jpg')">
-    <div class="container">
-      <span class="section-label">Planning &amp; tarifs</span>
+    <div class="page-hero__inner">
+      <span class="eyebrow">· Planning &amp; tarifs ·</span>
       <h1>Choisis ton <em>créneau</em></h1>
       <p>Cours accessibles toute l'année sur réservation en ligne. Place limitée à 10 personnes — pense à réserver la tienne !</p>
       <div style="margin-top: 32px;">
-        <a href="#" class="btn btn-primary">Accéder au planning en ligne <span class="arrow"></span></a>
+        <a class="btn btn--primary" href="#">Accéder au planning en ligne</a>
       </div>
     </div>
   </section>
 
   <!-- PLANNING VISUEL -->
-  <section class="section">
+  <section>
     <div class="container">
-      <div class="section-head">
-        <div>
-          <span class="section-label">Semaine type 2025-2026</span>
-          <h2>Un aperçu des créneaux</h2>
+      <div class="section__head">
+        <div class="section__head-content">
+          <span class="eyebrow">· Semaine type 2025-2026 ·</span>
+          <h2>Un aperçu des <em>créneaux</em></h2>
         </div>
-        <a href="#" class="btn btn-ghost">Réserver en ligne <span class="arrow"></span></a>
+        <a class="btn btn--ghost" href="#">Réserver en ligne</a>
       </div>
-      <div style="border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--surface);">
+      <div style="border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--surface-1);">
         <img src="assets/images/planning-2025-2026.png" alt="Planning Pole Dance Tours 2025-2026" style="width: 100%; display: block;">
       </div>
-      <p style="margin-top: 20px; font-size: 14px; color: var(--muted);">Lors de ta première connexion, crée un compte via notre logiciel de réservation. Le règlement se fait en ligne. Annulations 24 h à l'avance, sinon le cours est décompté.</p>
+      <p style="margin-top: 20px; font-size: 14px; color: var(--text-dim); max-width: 68ch;">Lors de ta première connexion, crée un compte via notre logiciel de réservation. Le règlement se fait en ligne. Annulations 24 h à l'avance, sinon le cours est décompté.</p>
     </div>
   </section>
 
   <!-- LES COURS -->
-  <section class="section">
+  <section>
     <div class="container">
-      <div class="section-head">
-        <div>
-          <span class="section-label">Les cours</span>
-          <h2>Un parcours progressif, du débutant au confirmé</h2>
+      <div class="section__head">
+        <div class="section__head-content">
+          <span class="eyebrow">· Les cours ·</span>
+          <h2>Un parcours <em>progressif</em>, du débutant au confirmé</h2>
         </div>
       </div>
-      <div class="classes-grid">
-        <article class="class-card">
-          <span class="num">01</span>
-          <h3>Pole dance débutants 1</h3>
-          <p>Ta 1ère année. Aucun prérequis : on travaille les figures et transitions de base pour te renforcer et t'emmener au niveau supérieur.</p>
+      <div class="grid grid--4">
+        <article class="course-card">
+          <span class="course-card__num">01</span>
+          <div>
+            <h3>Débutants 1</h3>
+            <p>Ta 1ère année. Aucun prérequis : on travaille les figures et transitions de base pour te renforcer et t'emmener au niveau supérieur.</p>
+          </div>
         </article>
-        <article class="class-card">
-          <span class="num">02</span>
-          <h3>Pole dance débutants 2</h3>
-          <p>Tu maîtrises les spins (figures qui tournent) et tricks (figures figées) de niveau débutant : chaise, front hook, montée, seat, crucifix inversé. On passe aux figures inversées et au mode spinning.</p>
+        <article class="course-card">
+          <span class="course-card__num">02</span>
+          <div>
+            <h3>Débutants 2</h3>
+            <p>Tu maîtrises les spins (figures qui tournent) et tricks (figures figées) de niveau débutant : chaise, front hook, montée, seat, crucifix inversé. On passe aux figures inversées et au mode spinning.</p>
+          </div>
         </article>
-        <article class="class-card">
-          <span class="num">03</span>
-          <h3>Pole dance inter 1/2</h3>
-          <p>On prend de la hauteur. Figures en force (shoulder mount, ayesha) et en souplesse (jade), transitions plus techniques.</p>
+        <article class="course-card">
+          <span class="course-card__num">03</span>
+          <div>
+            <h3>Inter 1 / 2</h3>
+            <p>On prend de la hauteur. Figures en force (shoulder mount, ayesha) et en souplesse (jade), transitions plus techniques.</p>
+          </div>
         </article>
-        <article class="class-card">
-          <span class="num">04</span>
-          <h3>Pole dance tous niveaux</h3>
-          <p>Pour tout le monde, de l'initiation au plus confirmé. Un format ouvert, idéal pour progresser ensemble.</p>
+        <article class="course-card">
+          <span class="course-card__num">04</span>
+          <div>
+            <h3>Tous niveaux</h3>
+            <p>Pour tout le monde, de l'initiation au plus confirmé. Un format ouvert, idéal pour progresser ensemble.</p>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>Tarifs</span>
-      <span class="accent">2025</span>
-      <span>Abonnements</span>
-      <span class="accent">Cartes</span>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__word">Tarifs</span>
+      <span class="marquee__word marquee__word--outline">2025</span>
+      <span class="marquee__word">Abonnements</span>
+      <span class="marquee__word marquee__word--outline">Cartes</span>
+      <span class="marquee__word">Tarifs</span>
+      <span class="marquee__word marquee__word--outline">2025</span>
+      <span class="marquee__word">Abonnements</span>
+      <span class="marquee__word marquee__word--outline">Cartes</span>
     </div>
   </div>
 
   <!-- TARIFS -->
-  <section class="section">
+  <section>
     <div class="container">
-      <div class="section-head">
-        <div>
-          <span class="section-label">Tarifs</span>
-          <h2>Abonnements &amp; cartes de cours</h2>
+      <div class="section__head">
+        <div class="section__head-content">
+          <span class="eyebrow">· Tarifs ·</span>
+          <h2>Abonnements &amp; <em>cartes de cours</em></h2>
         </div>
       </div>
       <div class="pricing">
         <article class="price-card">
-          <span class="label">Mon premier cours</span>
+          <span class="price-card__label">Mon premier cours</span>
           <h3>Découverte</h3>
-          <div class="price">15 €</div>
+          <div class="price-card__price">15 €</div>
           <p>Valable une seule fois. Le meilleur moyen de tester.</p>
         </article>
-        <article class="price-card featured">
-          <span class="label">Abonnement</span>
+        <article class="price-card price-card--featured">
+          <span class="price-card__label">Abonnement</span>
           <h3>1 cours / semaine</h3>
-          <div class="price">60 €<small> /mois</small></div>
+          <div class="price-card__price">60 €<small> /mois</small></div>
           <p>Engagement 1 an, reconduction tacite. Formule la plus populaire.</p>
         </article>
-        <article class="price-card featured">
-          <span class="label">Abonnement</span>
+        <article class="price-card price-card--featured">
+          <span class="price-card__label">Abonnement</span>
           <h3>2 cours / semaine</h3>
-          <div class="price">100 €<small> /mois</small></div>
+          <div class="price-card__price">100 €<small> /mois</small></div>
           <p>Engagement 1 an, reconduction tacite. Pour accélérer ta progression.</p>
         </article>
         <article class="price-card">
-          <span class="label">Carte de cours</span>
+          <span class="price-card__label">Carte de cours</span>
           <h3>Carte 1 cours</h3>
-          <div class="price">25 €</div>
+          <div class="price-card__price">25 €</div>
           <p>2 crédits — valable 12 mois.</p>
         </article>
         <article class="price-card">
-          <span class="label">Carte de cours</span>
+          <span class="price-card__label">Carte de cours</span>
           <h3>Carte 10 cours</h3>
-          <div class="price">200 €</div>
+          <div class="price-card__price">200 €</div>
           <p>20 crédits — valable 12 mois.</p>
         </article>
         <article class="price-card">
-          <span class="label">Carte de cours</span>
+          <span class="price-card__label">Carte de cours</span>
           <h3>Carte 20 cours</h3>
-          <div class="price">380 €</div>
+          <div class="price-card__price">380 €</div>
           <p>40 crédits — valable 12 mois.</p>
         </article>
       </div>
-      <p style="margin-top: 24px; font-size: 13px; color: var(--muted); text-align: center;">1 cours de pole dance = 2 crédits</p>
+      <p style="margin-top: 24px; font-size: 13px; color: var(--text-dim); text-align: center;">1 cours de pole dance = 2 crédits</p>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta" style="background-image: url('assets/images/home-cours-pole-dance.jpg')">
-    <div class="container">
+    <div class="cta__inner">
       <h2>Prêt·e à réserver ton <em>créneau</em> ?</h2>
       <p>Accède à la plateforme de réservation et choisis le cours qui te convient.</p>
-      <a href="#" class="btn btn-accent">Accéder au planning <span class="arrow"></span></a>
+      <a class="btn btn--outline" href="#">Accéder au planning</a>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="about-col">
-          <div class="footer-brand">
-            <img src="assets/images/logo-square-300.png" alt="">
-            <span>Pole Dance Tours</span>
-          </div>
-          <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance.</p>
-          <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Merci ✓'">
-            <input type="email" placeholder="Votre email" aria-label="Email">
-            <button type="submit">S'inscrire</button>
-          </form>
-        </div>
-        <div>
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="ecole.html">L'école</a></li>
-            <li><a href="planning.html">Planning &amp; tarifs</a></li>
-            <li><a href="stages.html">Stages &amp; camps</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:poledancetours37@gmail.com">poledancetours37@gmail.com</a></li>
-            <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
-            <li>1 quai de la Loire<br>37210 Rochecorbon</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Réseaux</h4>
-          <ul>
-            <li><a href="https://instagram.com/poledancetours" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
-          </ul>
-        </div>
+  <div class="prefoot-marquee">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__word marquee__word--outline">Pole Dance Tours</span>
+        <span class="marquee__word marquee__word--outline">— Rochecorbon —</span>
+        <span class="marquee__word marquee__word--outline">Pole Dance Tours</span>
+        <span class="marquee__word marquee__word--outline">— Rochecorbon —</span>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 Pole Dance Tours — Be Strong, Have Fun</span>
-        <div>
-          <a href="#">Mentions légales</a>
-          <a href="#">Cookies</a>
-          <a href="#">Vie privée</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <div class="site-footer__about">
+        <div class="site-footer__brand">
+          <img src="assets/images/logo-square-300.png" alt="" width="36" height="36">
+          <span>Pole Dance Tours</span>
         </div>
+        <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance.</p>
+        <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Merci ✓'">
+          <input type="email" placeholder="Votre email" aria-label="Email">
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ecole.html">L'école</a></li>
+          <li><a href="planning.html">Planning &amp; tarifs</a></li>
+          <li><a href="stages.html">Stages &amp; camps</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:poledancetours37@gmail.com">poledancetours37@gmail.com</a></li>
+          <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
+          <li>1 quai de la Loire<br>37210 Rochecorbon</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="https://instagram.com/poledancetours" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 Pole Dance Tours — Be Strong, Have Fun</span>
+      <div>
+        <a href="#">Mentions légales</a>
+        <a href="#">Cookies</a>
+        <a href="#">Vie privée</a>
       </div>
     </div>
   </footer>

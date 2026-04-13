@@ -8,57 +8,59 @@
   <link rel="icon" href="assets/images/logo-square-300.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,500;1,400;1,700&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="brand">
-        <img src="assets/images/logo-square-300.png" alt="Pole Dance Tours">
+  <div class="nav-wrap">
+    <header class="nav">
+      <a class="nav__logo" href="index.html">
+        <img src="assets/images/logo-square-300.png" alt="" width="28" height="28">
         <span>Pole Dance Tours</span>
       </a>
-      <nav class="nav">
+      <nav class="nav__links">
         <a href="index.html">Accueil</a>
-        <a href="ecole.html" class="active">L'école</a>
+        <a href="ecole.html" class="is-active">L'école</a>
         <a href="planning.html">Planning</a>
         <a href="stages.html">Stages</a>
         <a href="news.html">News</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="header-cta">
-        <a href="planning.html" class="btn btn-ghost">Réserver <span class="arrow"></span></a>
-        <button class="burger" aria-label="Menu"><span></span></button>
+      <div class="nav__cta">
+        <a class="btn btn--ghost" href="planning.html"><span class="btn__dot"></span> Réserver</a>
+        <button class="nav__burger" aria-label="Menu"><span></span></button>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <!-- PAGE HERO -->
   <section class="page-hero" style="background-image: url('assets/images/amandine-portrait-ecole.jpg')">
-    <div class="container">
-      <span class="section-label">L'école</span>
+    <div class="page-hero__inner">
+      <span class="eyebrow">· L'école ·</span>
       <h1>Une passion devenue <em>studio</em></h1>
       <p>De Dijon à Tours, Amandine a construit une école dédiée à la pole dance et au bien-être. Bienvenue à Pole Dance Tours.</p>
     </div>
   </section>
 
-  <!-- FEATURE — La prof -->
-  <section class="section">
+  <!-- PORTRAIT AMANDINE (bio longue) -->
+  <section>
     <div class="container">
-      <div class="feature">
-        <div class="visual" style="background-image: url('assets/images/amandine-portrait-ecole.jpg')"></div>
-        <div>
-          <span class="section-label">La prof</span>
+      <div class="split">
+        <div class="split__visual">
+          <img src="assets/images/amandine-portrait-ecole.jpg" alt="Amandine Janinet" width="640" height="853">
+        </div>
+        <div class="split__content">
+          <span class="eyebrow">· La prof ·</span>
           <h2>Amandine <em>Janinet</em></h2>
           <p>Amandine a trouvé sa passion dans la pole dance en 2013 à Dijon, sa ville natale. Devenue professeure après trois ans de pratique, elle a consolidé son expertise en suivant une formation professionnelle à Paris avec Doris Arnold en 2016. Parallèlement, elle obtient son diplôme d'éducateur sportif et explore d'autres domaines tels que le yoga, le pilates, les cours HBX, etc.</p>
           <p>Axée sur la qualité, Amandine diversifie ses cours entre pole dance, fitness, trampolines, renforcement musculaire, HIIT, stretching, yoga et pilates. Son désir d'innover l'a conduit à organiser des camps de pole dance, offrant à ses élèves des mini-vacances sportives à travers la France.</p>
           <p>Après huit années d'enseignement au sein d'une association blésoise, Amandine prend son envol et concrétise son rêve en ouvrant son propre studio à Tours, où elle partage sa passion avec la communauté locale.</p>
-          <ul class="pill-list">
-            <li>BPJEPS AGFF</li>
-            <li>Formation Doris Arnold</li>
-            <li>Pilates matwork 1 &amp; 2</li>
-            <li>Yoga n°1 &amp; 2</li>
+          <ul class="chip-list">
+            <li class="chip">BPJEPS AGFF</li>
+            <li class="chip">Formation Doris Arnold</li>
+            <li class="chip">Pilates matwork 1 &amp; 2</li>
+            <li class="chip">Yoga n°1 &amp; 2</li>
           </ul>
         </div>
       </div>
@@ -66,45 +68,64 @@
   </section>
 
   <!-- STATS -->
-  <section class="section">
-    <div class="container">
-      <div class="stats">
-        <h2>Une expertise bâtie sur la durée</h2>
-        <div class="stat"><div class="num">11<span style="color: var(--accent)">+</span></div><div class="label">Ans de pratique</div></div>
-        <div class="stat"><div class="num">8<span style="color: var(--accent)">+</span></div><div class="label">Ans d'enseignement</div></div>
-        <div class="stat"><div class="num">4<span style="color: var(--accent)">+</span></div><div class="label">Disciplines enseignées</div></div>
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stats__text">
+        <span class="eyebrow">· Une expertise ·</span>
+        <h2>Bâtie sur la <em>durée</em></h2>
+        <p>11 ans de pratique, 8 ans d'enseignement, 4 disciplines complémentaires. Une prof diplômée qui a transformé sa passion en métier.</p>
+      </div>
+      <div class="stats__figures">
+        <div class="stat">
+          <span class="stat__num">11<sub>+</sub></span>
+          <span class="stat__label">années de pratique</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">8<sub>+</sub></span>
+          <span class="stat__label">années d'enseignement</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">4<sub>+</sub></span>
+          <span class="stat__label">disciplines enseignées</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>Parc</span>
-      <span class="accent">Beauregard</span>
-      <span>Rochecorbon</span>
-      <span class="accent">Tours</span>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__word">Parc</span>
+      <span class="marquee__word marquee__word--outline">Beauregard</span>
+      <span class="marquee__word">Rochecorbon</span>
+      <span class="marquee__word marquee__word--outline">Tours</span>
+      <span class="marquee__word">Parc</span>
+      <span class="marquee__word marquee__word--outline">Beauregard</span>
+      <span class="marquee__word">Rochecorbon</span>
+      <span class="marquee__word marquee__word--outline">Tours</span>
     </div>
   </div>
 
   <!-- LE LIEU -->
-  <section class="section">
+  <section>
     <div class="container">
-      <div class="studio">
-        <div class="visual" style="background-image: url('assets/images/studio-parc-beauregard.jpg')"></div>
-        <div>
-          <span class="section-label">Le lieu</span>
-          <h2 style="font-size: clamp(30px, 3.8vw, 52px); line-height: 1.05; margin: 18px 0 14px;">Parc Beauregard, un écrin de verdure</h2>
+      <div class="split">
+        <div class="split__visual">
+          <img src="assets/images/studio-parc-beauregard.jpg" alt="Studio Parc Beauregard" width="640" height="480" style="aspect-ratio: 4/3;">
+        </div>
+        <div class="split__content">
+          <span class="eyebrow">· Le lieu ·</span>
+          <h2>Parc Beauregard, un <em>écrin de verdure</em></h2>
           <p>Située à Rochecorbon, à une minute de la Guinguette et de la sortie d'autoroute Tours Nord / Vouvray, nichée dans un écrin de verdure. Au 1 quai de la Loire.</p>
           <p>Pole Dance Tours vous accueille dans une des salles du Parc Beauregard avec 3m15 de hauteur sous plafond. 10 personnes maximum par cours.</p>
-          <ul>
+          <ul class="studio-list">
             <li>5 barres X-POLE XPERT PRO avec système X-lock (statique / spinning)</li>
             <li>3 barres chrome · 2 barres Powder Coated</li>
             <li>3m15 de hauteur sous plafond</li>
             <li>Tapis d'échauffement et de souplesse</li>
             <li>Vestiaires et douche individuelle</li>
           </ul>
-          <a href="contact.html" class="btn btn-primary" style="margin-top: 26px;">Nous trouver <span class="arrow"></span></a>
+          <a class="btn btn--primary" href="contact.html" style="margin-top: 24px;">Nous trouver</a>
         </div>
       </div>
     </div>
@@ -112,63 +133,72 @@
 
   <!-- CTA -->
   <section class="cta" style="background-image: url('assets/images/studio-parc-beauregard.jpg')">
-    <div class="container">
+    <div class="cta__inner">
       <h2>Prêt·e à <em>pousser la porte</em> ?</h2>
       <p>Ton premier cours à 15 € — pour découvrir la discipline, l'école et rencontrer Amandine.</p>
-      <a href="planning.html" class="btn btn-accent">Réserver mon 1er cours <span class="arrow"></span></a>
+      <a class="btn btn--outline" href="planning.html">Réserver mon 1er cours</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="about-col">
-          <div class="footer-brand">
-            <img src="assets/images/logo-square-300.png" alt="">
-            <span>Pole Dance Tours</span>
-          </div>
-          <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance.</p>
-          <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Merci ✓'">
-            <input type="email" placeholder="Votre email" aria-label="Email">
-            <button type="submit">S'inscrire</button>
-          </form>
-        </div>
-        <div>
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="ecole.html">L'école</a></li>
-            <li><a href="planning.html">Planning &amp; tarifs</a></li>
-            <li><a href="stages.html">Stages &amp; camps</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:poledancetours37@gmail.com">poledancetours37@gmail.com</a></li>
-            <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
-            <li>1 quai de la Loire<br>37210 Rochecorbon</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Réseaux</h4>
-          <ul>
-            <li><a href="https://instagram.com/poledancetours" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
-          </ul>
-        </div>
+  <!-- PRE-FOOTER -->
+  <div class="prefoot-marquee">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__word marquee__word--outline">Pole Dance Tours</span>
+        <span class="marquee__word marquee__word--outline">— Rochecorbon —</span>
+        <span class="marquee__word marquee__word--outline">Pole Dance Tours</span>
+        <span class="marquee__word marquee__word--outline">— Rochecorbon —</span>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 Pole Dance Tours — Be Strong, Have Fun</span>
-        <div>
-          <a href="#">Mentions légales</a>
-          <a href="#">Cookies</a>
-          <a href="#">Vie privée</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <div class="site-footer__about">
+        <div class="site-footer__brand">
+          <img src="assets/images/logo-square-300.png" alt="" width="36" height="36">
+          <span>Pole Dance Tours</span>
         </div>
+        <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance.</p>
+        <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Merci ✓'">
+          <input type="email" placeholder="Votre email" aria-label="Email">
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ecole.html">L'école</a></li>
+          <li><a href="planning.html">Planning &amp; tarifs</a></li>
+          <li><a href="stages.html">Stages &amp; camps</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:poledancetours37@gmail.com">poledancetours37@gmail.com</a></li>
+          <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
+          <li>1 quai de la Loire<br>37210 Rochecorbon</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="https://instagram.com/poledancetours" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 Pole Dance Tours — Be Strong, Have Fun</span>
+      <div>
+        <a href="#">Mentions légales</a>
+        <a href="#">Cookies</a>
+        <a href="#">Vie privée</a>
       </div>
     </div>
   </footer>

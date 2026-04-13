@@ -1,19 +1,14 @@
 // Mobile nav toggle
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav');
-if (burger && nav) {
-  burger.addEventListener('click', () => nav.classList.toggle('is-open'));
-  nav.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') nav.classList.remove('is-open');
+const burger = document.querySelector('.nav__burger');
+const links = document.querySelector('.nav__links');
+if (burger && links) {
+  burger.addEventListener('click', () => links.classList.toggle('is-open'));
+  links.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') links.classList.remove('is-open');
   });
 }
 
-// Duplicate marquee children for seamless loop
-document.querySelectorAll('.marquee-track').forEach(track => {
-  track.innerHTML += track.innerHTML;
-});
-
-// Simple contact form stub
+// Contact form stub
 const form = document.querySelector('.contact-form');
 if (form) {
   form.addEventListener('submit', (e) => {

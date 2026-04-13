@@ -8,111 +8,119 @@
   <link rel="icon" href="assets/images/logo-square-300.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,500;1,400;1,700&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="brand">
-        <img src="assets/images/logo-square-300.png" alt="Pole Dance Tours">
+  <div class="nav-wrap">
+    <header class="nav">
+      <a class="nav__logo" href="index.html">
+        <img src="assets/images/logo-square-300.png" alt="" width="28" height="28">
         <span>Pole Dance Tours</span>
       </a>
-      <nav class="nav">
+      <nav class="nav__links">
         <a href="index.html">Accueil</a>
         <a href="ecole.html">L'école</a>
         <a href="planning.html">Planning</a>
-        <a href="stages.html" class="active">Stages</a>
+        <a href="stages.html" class="is-active">Stages</a>
         <a href="news.html">News</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="header-cta">
-        <a href="planning.html" class="btn btn-ghost">Réserver <span class="arrow"></span></a>
-        <button class="burger" aria-label="Menu"><span></span></button>
+      <div class="nav__cta">
+        <a class="btn btn--ghost" href="planning.html"><span class="btn__dot"></span> Réserver</a>
+        <button class="nav__burger" aria-label="Menu"><span></span></button>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <!-- PAGE HERO -->
   <section class="page-hero" style="background-image: url('assets/images/amandine-portrait-home.jpg')">
-    <div class="container">
-      <span class="section-label">Stages &amp; camps</span>
+    <div class="page-hero__inner">
+      <span class="eyebrow">· Stages &amp; camps ·</span>
       <h1>Des sessions <em>intensives</em>, hors du temps</h1>
       <p>Pendant les vacances scolaires ou en immersion complète dans une villa avec piscine. Pour progresser, se dépasser et rencontrer.</p>
     </div>
   </section>
 
-  <!-- STAGES / CAMPS SPLIT -->
-  <section class="section">
+  <!-- STAGES / CAMPS PANELS -->
+  <section>
     <div class="container">
-      <div class="split">
+      <div class="panels">
         <div class="panel">
-          <span class="num" style="font-family: var(--font-display); font-size: 34px; color: var(--accent);">01</span>
-          <h2>Nos stages</h2>
+          <span class="panel__num">01</span>
+          <h2>Nos <em>stages</em></h2>
           <p>Les stages proposés par Pole Dance Tours sont des sessions intensives étalées sur plusieurs jours pendant les vacances scolaires. Ils sont ouverts à tous, des débutants aux inter/avancés.</p>
           <p>Les participants peuvent s'inscrire à la journée ou sur plusieurs jours. Ces stages comprennent une grande variété de cours :</p>
-          <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 10px;">
-            <li style="padding-left: 22px; position: relative; color: #dcdee3; font-size: 14px;"><span style="position: absolute; left: 0; color: var(--accent);">→</span> <strong>Pole techniques</strong> — apprentissage et perfectionnement des mouvements techniques.</li>
-            <li style="padding-left: 22px; position: relative; color: #dcdee3; font-size: 14px;"><span style="position: absolute; left: 0; color: var(--accent);">→</span> <strong>Pole à thèmes</strong> — pole équilibre, doublette, split, exotic.</li>
-            <li style="padding-left: 22px; position: relative; color: #dcdee3; font-size: 14px;"><span style="position: absolute; left: 0; color: var(--accent);">→</span> <strong>Yoga &amp; souplesse</strong> — pour améliorer la flexibilité et renforcer le corps.</li>
+          <ul class="studio-list" style="margin-top: 8px;">
+            <li><strong style="color: var(--text)">Pole techniques</strong> — apprentissage et perfectionnement des mouvements techniques.</li>
+            <li><strong style="color: var(--text)">Pole à thèmes</strong> — pole équilibre, doublette, split, exotic.</li>
+            <li><strong style="color: var(--text)">Yoga &amp; souplesse</strong> — pour améliorer la flexibilité et renforcer le corps.</li>
           </ul>
           <p style="margin-top: 8px;">L'objectif : accumuler un maximum de conseils et de techniques pour progresser dans sa discipline.</p>
         </div>
-        <div class="panel feature-image" style="background-image: url('assets/images/home-cours-pole-dance.jpg')">
-          <div>
-            <span class="num" style="font-family: var(--font-display); font-size: 34px; color: var(--accent);">02</span>
-            <h2>Nos camps</h2>
-            <p>4 jours · 10 à 12 participantes · niveaux débutante à inter-avancée. Cours de pole dance (exotic, équilibre, doublette…), stretching, yoga, et activités : spa, aqua pole dance, visite de la région, dégustations.</p>
-            <p>Séjour en villa avec piscine, chambre partagée, pension complète. Une bande de meufs déjantées qui viennent s'éclater autour d'une barre — souvenir inoubliable garanti.</p>
-            <a href="contact.html" class="btn btn-primary" style="margin-top: 20px; align-self: flex-start;">Réserver un camp <span class="arrow"></span></a>
-          </div>
+        <div class="panel panel--image" style="background-image: url('assets/images/home-cours-pole-dance.jpg')">
+          <span class="panel__num">02</span>
+          <h2>Nos <em>camps</em></h2>
+          <p>4 jours · 10 à 12 participantes · niveaux débutante à inter-avancée. Cours de pole dance (exotic, équilibre, doublette…), stretching, yoga, et activités : spa, aqua pole dance, visite de la région, dégustations.</p>
+          <p>Séjour en villa avec piscine, chambre partagée, pension complète. Une bande de meufs déjantées qui viennent s'éclater autour d'une barre — souvenir inoubliable garanti.</p>
+          <a class="btn btn--primary" href="contact.html" style="margin-top: 8px; align-self: flex-start;">Réserver un camp</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>Pole</span>
-      <span class="accent">Flow</span>
-      <span>Pole</span>
-      <span class="accent">Exotic</span>
-      <span>Yoga</span>
-      <span class="accent">Stretching</span>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__word">Pole</span>
+      <span class="marquee__word marquee__word--outline">Flow</span>
+      <span class="marquee__word">Exotic</span>
+      <span class="marquee__word marquee__word--outline">Yoga</span>
+      <span class="marquee__word">Stretching</span>
+      <span class="marquee__word marquee__word--outline">Equilibre</span>
+      <span class="marquee__word">Pole</span>
+      <span class="marquee__word marquee__word--outline">Flow</span>
     </div>
   </div>
 
   <!-- AU PROGRAMME -->
-  <section class="section">
+  <section>
     <div class="container">
-      <div class="section-head">
-        <div>
-          <span class="section-label">Au programme</span>
-          <h2>Une variété de cours sur 4 jours</h2>
+      <div class="section__head">
+        <div class="section__head-content">
+          <span class="eyebrow">· Au programme ·</span>
+          <h2>Une variété de cours <em>sur 4 jours</em></h2>
         </div>
       </div>
-      <div class="classes-grid">
-        <article class="class-card">
-          <span class="num">01</span>
-          <h3>Pole techniques</h3>
-          <p>Apprentissage et perfectionnement des mouvements techniques de la pole dance.</p>
+      <div class="grid grid--4">
+        <article class="course-card">
+          <span class="course-card__num">01</span>
+          <div>
+            <h3>Pole techniques</h3>
+            <p>Apprentissage et perfectionnement des mouvements techniques de la pole dance.</p>
+          </div>
         </article>
-        <article class="class-card">
-          <span class="num">02</span>
-          <h3>Pole à thèmes</h3>
-          <p>Pole équilibre, doublette, split, exotic : une diversité dans la pratique.</p>
+        <article class="course-card">
+          <span class="course-card__num">02</span>
+          <div>
+            <h3>Pole à thèmes</h3>
+            <p>Pole équilibre, doublette, split, exotic : une diversité dans la pratique.</p>
+          </div>
         </article>
-        <article class="class-card">
-          <span class="num">03</span>
-          <h3>Yoga &amp; souplesse</h3>
-          <p>Flexibilité et renforcement du corps en complément de la pole.</p>
+        <article class="course-card">
+          <span class="course-card__num">03</span>
+          <div>
+            <h3>Yoga &amp; souplesse</h3>
+            <p>Flexibilité et renforcement du corps en complément de la pole.</p>
+          </div>
         </article>
-        <article class="class-card">
-          <span class="num">04</span>
-          <h3>Activités bonus</h3>
-          <p>Spa, aqua pole dance, visite de la région, dégustations — entre copines.</p>
+        <article class="course-card">
+          <span class="course-card__num">04</span>
+          <div>
+            <h3>Activités bonus</h3>
+            <p>Spa, aqua pole dance, visite de la région, dégustations — entre copines.</p>
+          </div>
         </article>
       </div>
     </div>
@@ -120,62 +128,71 @@
 
   <!-- CTA -->
   <section class="cta" style="background-image: url('assets/images/amandine-portrait-home.jpg')">
-    <div class="container">
+    <div class="cta__inner">
       <h2>Envie de <em>t'évader</em> avec nous ?</h2>
       <p>Contacte-nous pour connaître les prochaines dates de stages et de camps.</p>
-      <a href="contact.html" class="btn btn-accent">Nous contacter <span class="arrow"></span></a>
+      <a class="btn btn--outline" href="contact.html">Nous contacter</a>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="about-col">
-          <div class="footer-brand">
-            <img src="assets/images/logo-square-300.png" alt="">
-            <span>Pole Dance Tours</span>
-          </div>
-          <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance.</p>
-          <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Merci ✓'">
-            <input type="email" placeholder="Votre email" aria-label="Email">
-            <button type="submit">S'inscrire</button>
-          </form>
-        </div>
-        <div>
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="ecole.html">L'école</a></li>
-            <li><a href="planning.html">Planning &amp; tarifs</a></li>
-            <li><a href="stages.html">Stages &amp; camps</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:amandinejaninet.polecamp@gmail.com">amandinejaninet.polecamp@gmail.com</a></li>
-            <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
-            <li>1 quai de la Loire<br>37210 Rochecorbon</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Réseaux</h4>
-          <ul>
-            <li><a href="https://instagram.com/amandine.janinet" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
-          </ul>
-        </div>
+  <div class="prefoot-marquee">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__word marquee__word--outline">Pole Dance Tours</span>
+        <span class="marquee__word marquee__word--outline">— Rochecorbon —</span>
+        <span class="marquee__word marquee__word--outline">Pole Dance Tours</span>
+        <span class="marquee__word marquee__word--outline">— Rochecorbon —</span>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 Pole Dance Tours — Be Strong, Have Fun</span>
-        <div>
-          <a href="#">Mentions légales</a>
-          <a href="#">Cookies</a>
-          <a href="#">Vie privée</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <div class="site-footer__about">
+        <div class="site-footer__brand">
+          <img src="assets/images/logo-square-300.png" alt="" width="36" height="36">
+          <span>Pole Dance Tours</span>
         </div>
+        <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance.</p>
+        <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Merci ✓'">
+          <input type="email" placeholder="Votre email" aria-label="Email">
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ecole.html">L'école</a></li>
+          <li><a href="planning.html">Planning &amp; tarifs</a></li>
+          <li><a href="stages.html">Stages &amp; camps</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:amandinejaninet.polecamp@gmail.com">amandinejaninet.polecamp@gmail.com</a></li>
+          <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
+          <li>1 quai de la Loire<br>37210 Rochecorbon</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="https://instagram.com/amandine.janinet" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 Pole Dance Tours — Be Strong, Have Fun</span>
+      <div>
+        <a href="#">Mentions légales</a>
+        <a href="#">Cookies</a>
+        <a href="#">Vie privée</a>
       </div>
     </div>
   </footer>
