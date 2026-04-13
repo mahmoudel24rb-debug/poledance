@@ -1,4 +1,18 @@
-# Changelog — Refonte selon PLAN_REFONTE.md
+# Changelog
+
+## Passe 3 — Finition (polish visuel, perf, SEO, a11y)
+
+Application de `PROMPT_PASSE_3.md` en 3 commits. Objectif : ~95% fidélité vs Dancer + bases SEO/a11y/perf solides.
+
+- **Polish visuel** : hero title `<br>`, CTA h2 `clamp(3rem, 8vw, 7rem)`, stats labels uppercase, prefoot opacity 0.75, section Stages en grille 2×2 (home uniquement).
+- **Performance** : `loading="lazy"` + `decoding="async"` sur images hors-viewport, `fetchpriority="high"` sur hero, preload font Sora, dimensions explicites ajoutées sur l'image planning.
+- **SEO** : Open Graph + Twitter Card + canonical sur les 6 pages, Schema.org SportsActivityLocation sur `index.html` et `contact.html`.
+- **A11y** : `:focus-visible` lavande, `aria-expanded`/`aria-controls` sur burger menu + JS synchro, `aria-label` sur nav principale, `aria-hidden` sur `.btn__dot`, support `prefers-reduced-motion`.
+- **Décision** : URL canonique et OG pointent sur `https://mahmoudel24rb-debug.github.io/poledance/` (GH Pages actuel, à remplacer quand `poledancetours.fr` sera en prod).
+
+---
+
+# Refonte selon PLAN_REFONTE.md
 
 ## Refonte visuelle complète (langage "Dancer")
 
