@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/images/logo-square-300.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800;12..96,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -35,17 +35,17 @@
   <section class="page-header">
     <div class="container">
       <span class="eyebrow">News</span>
-      <h1 style="margin-top:24px">Les <span class="gradient-text">actualités</span></h1>
-      <p>Restez au courant de toutes les actualités, ateliers et performances captivantes de notre école.</p>
+      <h1>Les<br><em>actualités</em></h1>
+      <p>Reste au courant de toutes les actualités, ateliers et performances captivantes de notre école.</p>
     </div>
   </section>
 
   <section style="padding-top:0">
     <div class="container">
-      <div class="bio-grid reveal" style="grid-template-columns:1fr 1fr; gap:60px">
+      <div class="about reveal">
         <div>
           <span class="eyebrow">Instagram en direct</span>
-          <h2 style="margin-top:22px; margin-bottom:24px;">Suis-nous sur <span class="gradient-text">@poledancetours</span></h2>
+          <h2 style="margin-top:24px">Suis-nous sur <em style="color:var(--accent); font-style:italic">@poledancetours</em></h2>
           <p>Le flux Instagram alimente cette page en direct : photos de cours, replays de chorégraphies, annonces de stages, ouvertures de saison et coulisses des camps.</p>
           <p>Pour ne rien rater, le plus simple est encore de nous suivre directement sur Instagram. Tu y trouveras aussi les comptes perso et tous les contenus inédits.</p>
           <div style="margin-top:28px; display:flex; gap:14px; flex-wrap:wrap">
@@ -56,7 +56,7 @@
         <div class="insta-wrap">
           <a href="https://www.instagram.com/poledancetours" target="_blank" rel="noopener" class="insta-card">
             <img src="assets/images/instagram-avatar.jpg" alt="">
-            <strong>@poledancetours</strong>
+            <strong style="font-size:.94rem">@poledancetours</strong>
             <span>L'école</span>
           </a>
           <a href="https://www.instagram.com/poledancetours" target="_blank" rel="noopener" class="insta-card">
@@ -84,12 +84,27 @@
     </div>
   </section>
 
-  <section style="padding-top:0">
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Instagram <span class="dot">✦</span></span>
+      <span class="filled">Live feed <span class="dot">✦</span></span>
+      <span>@poledancetours <span class="dot">✦</span></span>
+      <span class="filled">Reels <span class="dot">✦</span></span>
+      <span>Instagram <span class="dot">✦</span></span>
+      <span class="filled">Live feed <span class="dot">✦</span></span>
+      <span>@poledancetours <span class="dot">✦</span></span>
+      <span class="filled">Reels <span class="dot">✦</span></span>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER CTA -->
+  <section>
     <div class="container">
-      <div class="cta-band reveal">
+      <div class="newsletter-band reveal">
         <span class="eyebrow">Bientôt en ligne</span>
-        <h2>Widget Instagram <span class="gradient-text">en intégration</span></h2>
-        <p style="text-align:center">La connexion API Instagram sera branchée à la mise en ligne pour afficher les derniers posts directement sur cette page, comme sur l'ancien site.</p>
+        <h2>Widget Instagram <em>en intégration</em></h2>
+        <p>La connexion API Instagram sera branchée à la mise en ligne pour afficher les derniers posts directement sur cette page, comme sur l'ancien site.</p>
         <div class="hero-cta-row">
           <a href="https://www.instagram.com/poledancetours" target="_blank" rel="noopener" class="btn btn-primary">Voir Instagram <span class="arrow">→</span></a>
         </div>
@@ -99,16 +114,16 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="brand">
             <img src="assets/images/logo-square-300.png" alt="Pole Dance Tours">
             <span><small>Be strong · have fun</small>Pole Dance Tours</span>
           </a>
-          <p>Découvrez la magie du pole dance dans notre école. Explorez la fusion de la danse et du fitness, renforcez votre corps et développez votre confiance.</p>
+          <p>Découvre la magie de la pole dance dans notre école. Renforce ton corps, développe ta confiance, prends du plaisir.</p>
         </div>
         <div>
-          <h4>Navigation</h4>
+          <h4>Pages</h4>
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="ecole.html">L'école</a></li>
@@ -125,22 +140,17 @@
             <li><a href="mailto:poledancetours37@gmail.com">poledancetours37@gmail.com</a></li>
             <li>1 quai de la Loire,<br>37210 Rochecorbon</li>
           </ul>
-          <h4 style="margin-top:28px">Réseaux</h4>
+        </div>
+        <div>
+          <h4>Réseaux</h4>
           <ul>
             <li><a href="https://www.instagram.com/poledancetours" target="_blank" rel="noopener">Instagram</a></li>
             <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
             <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
           </ul>
         </div>
-        <div>
-          <h4>Newsletter</h4>
-          <p style="font-size:.9rem">Inscris-toi pour les dernières actus et offres exclusives.</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Ton email" required>
-            <button type="submit">S'inscrire</button>
-          </form>
-        </div>
       </div>
+      <div class="footer-big">Pole Dance <em>Tours</em></div>
       <div class="footer-bottom">
         <div>© 2026 Pole Dance Tours. Tous droits réservés.</div>
         <div class="legal">
