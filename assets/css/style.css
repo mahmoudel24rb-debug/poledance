@@ -138,10 +138,10 @@ section { padding-block: var(--section-y); }
 .btn--primary:hover { background: var(--accent); }
 .btn--ghost {
   background: transparent;
-  color: var(--text);
-  border: 1px solid var(--border-strong);
+  color: #ff58c8;
+  border: 1px solid #ff58c8;
 }
-.btn--ghost:hover { border-color: var(--text); background: rgba(255,255,255,0.05); }
+.btn--ghost:hover { background: #ff58c8; color: #000; }
 .btn--outline {
   background: transparent;
   color: var(--text);
@@ -336,7 +336,7 @@ section { padding-block: var(--section-y); }
   align-items: end;
   margin-bottom: clamp(32px, 5vw, 64px);
 }
-.section__head-content { max-width: 32ch; }
+.section__head-content { max-width: 56ch; }
 .section__head .eyebrow { margin-bottom: 16px; }
 .section__head h2 { margin: 0; }
 
