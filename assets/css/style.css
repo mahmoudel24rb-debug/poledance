@@ -640,7 +640,6 @@ section { padding-block: var(--section-y); }
   text-align: center;
   border-block: 1px solid var(--border);
   overflow: hidden;
-  isolation: isolate;
   background-color: var(--bg);
   background-size: cover;
   background-position: center;
@@ -649,9 +648,8 @@ section { padding-block: var(--section-y); }
 .cta::before {
   content: "";
   position: absolute;
-  inset: -1px;
+  inset: 0;
   background: rgba(0,0,0,0.65);
-  z-index: -1;
 }
 .cta__inner {
   max-width: 920px;
