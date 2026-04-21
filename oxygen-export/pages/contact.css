@@ -288,7 +288,6 @@ section { padding-block: var(--section-y); }
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--border);
-  isolation: isolate;
   transition: border-color 0.3s ease;
 }
 .feature-card--events { aspect-ratio: 4/5; }
@@ -312,7 +311,7 @@ section { padding-block: var(--section-y); }
     rgba(0,0,0,0.35) 0%,
     rgba(0,0,0,0.55) 45%,
     rgba(0,0,0,0.95) 80%);
-  z-index: -1;
+  pointer-events: none;
 }
 .feature-card__num {
   position: absolute; top: 20px; left: 20px;
@@ -613,7 +612,6 @@ section { padding-block: var(--section-y); }
   text-align: center;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
-  isolation: isolate;
   background-color: var(--bg);
   background-size: cover;
   background-position: center 30%;
@@ -624,7 +622,7 @@ section { padding-block: var(--section-y); }
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.95) 100%);
-  z-index: -1;
+  pointer-events: none;
 }
 .page-hero__inner {
   max-width: var(--container);
@@ -772,7 +770,6 @@ section { padding-block: var(--section-y); }
 .panel--image {
   position: relative;
   background: var(--surface-1) center/cover no-repeat;
-  isolation: isolate;
   justify-content: flex-end;
   color: var(--text);
 }
@@ -784,7 +781,7 @@ section { padding-block: var(--section-y); }
     rgba(0,0,0,0.35) 0%,
     rgba(0,0,0,0.55) 45%,
     rgba(0,0,0,0.95) 80%);
-  z-index: -1;
+  pointer-events: none;
 }
 
 /* Responsive (hors nav / footer, gérés dans les templates Oxygen) */
