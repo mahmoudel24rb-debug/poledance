@@ -1,5 +1,24 @@
 /* Header / Nav — Pole Dance Studio */
 
+/* Design tokens (nécessaires si le header est dans une template Oxygen séparée) */
+:root {
+  --bg:             #000000;
+  --surface-1:      #1d2024;
+  --surface-2:      #13151a;
+  --border:         rgba(255,255,255,0.08);
+  --border-strong:  rgba(255,255,255,0.14);
+  --text:           #ffffff;
+  --text-muted:     rgba(255,255,255,0.72);
+  --text-dim:       rgba(255,255,255,0.5);
+  --accent:         #e5b2ff;
+  --accent-2:       #f6ff7b;
+  --font-display:   "Sora", "Inter", system-ui, sans-serif;
+  --font-body:      "Inter", system-ui, sans-serif;
+  --font-accent:    "Work Sans", "Inter", system-ui, sans-serif;
+  --container:      1280px;
+  --gutter:         clamp(20px, 2.2vw, 32px);
+}
+
 .nav {
   position: sticky;
   top: 0;
