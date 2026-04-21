@@ -1,4 +1,4 @@
-// Contact form stub (page Contact)
+// Contact form stub
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {

@@ -787,7 +787,7 @@ section { padding-block: var(--section-y); }
   z-index: -1;
 }
 
-/* Responsive (hors nav / footer) */
+/* Responsive (hors nav / footer, gérés dans les templates Oxygen) */
 @media (max-width: 1200px) {
   .grid--3, .testimonials { grid-template-columns: repeat(2, 1fr); }
   .grid--4 { grid-template-columns: repeat(2, 1fr); }
