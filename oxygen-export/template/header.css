@@ -68,14 +68,21 @@
   justify-self: center;
   display: flex;
   gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+.nav__links li { margin: 0; padding: 0; }
 .nav__links a {
   font-family: var(--font-body);
   font-size: 14px;
   color: var(--text-muted);
   transition: color 0.2s ease;
 }
-.nav__links a:hover, .nav__links a.is-active { color: var(--text); }
+.nav__links a:hover,
+.nav__links a.is-active,
+.nav__links .current-menu-item > a,
+.nav__links .current_page_item > a { color: var(--text); }
 .nav__cta { justify-self: end; display: flex; align-items: center; gap: 10px; }
 .nav__burger {
   display: none;
