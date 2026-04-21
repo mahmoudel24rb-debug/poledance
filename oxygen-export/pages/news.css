@@ -612,23 +612,30 @@ section { padding-block: var(--section-y); }
   text-align: center;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
-  background-color: var(--bg);
+  background: rgba(0,0,0,0.65);
+}
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 0;
 }
 .page-hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.95) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.55) 100%);
   pointer-events: none;
+  z-index: 1;
 }
 .page-hero__inner {
   max-width: var(--container);
   margin-inline: auto;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .page-hero .eyebrow { margin-bottom: 24px; }
 .page-hero h1 {
