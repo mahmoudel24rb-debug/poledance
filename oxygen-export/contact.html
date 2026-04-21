@@ -1,0 +1,174 @@
+
+  <div class="nav-wrap">
+    <header class="nav">
+      <a class="nav__logo" href="index.html">
+        <img src="assets/images/logo-square-300.png" alt="" width="28" height="28">
+        <span>Pole Dance Studio</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="ecole.html">L'école</a>
+        <a href="planning.html">Planning</a>
+        <a href="stages.html">Stages</a>
+        <a href="news.html">News</a>
+        <a href="contact.html" class="is-active">Contact</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--ghost" href="planning.html"><span class="btn__dot" aria-hidden="true"></span> Réserver</a>
+        <button class="nav__burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span aria-hidden="true"></span></button>
+      </div>
+    </header>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image: url('assets/images/studio-parc-beauregard.jpg')">
+    <div class="page-hero__inner">
+      <span class="eyebrow">· Contact ·</span>
+      <h1>On est là pour <em>répondre</em></h1>
+      <p>On t'aide à commencer ton aventure dans le monde captivant du pole dance. Une question ? Écris-nous.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="eyebrow">· Coordonnées ·</span>
+          <h2 style="margin: 20px 0 12px;">Rejoins-nous au <em>studio</em></h2>
+          <p>Notre studio vous accueille dans un espace lumineux et dédié à la pratique.</p>
+          <ul>
+            <li>
+              <div>
+                <strong>Adresse</strong>
+                France
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Email — école</strong>
+                <a href="mailto:poledancetours37@gmail.com">poledancetours37@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Email — camps</strong>
+                <a href="mailto:amandinejaninet.polecamp@gmail.com">amandinejaninet.polecamp@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Téléphone</strong>
+                <a href="tel:+33783118183">07 83 11 81 83</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://instagram.com/poledancetours" target="_blank" rel="noopener">@poledancetours</a> · <a href="https://instagram.com/amandine.janinet" target="_blank" rel="noopener">@amandine.janinet</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <div>
+            <label for="name">Nom</label>
+            <input id="name" type="text" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__word">Pole</span>
+      <span class="marquee__word marquee__word--outline">Dance</span>
+      <span class="marquee__word">Studio</span>
+      <span class="marquee__word marquee__word--outline">Be Strong</span>
+      <span class="marquee__word">Have</span>
+      <span class="marquee__word marquee__word--outline">Fun</span>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta" style="background-image: url('assets/images/home-cours-pole-dance.jpg')">
+    <div class="cta__inner">
+      <h2>Be <em>strong</em>, have fun</h2>
+      <p>On a hâte de te rencontrer au studio.</p>
+      <a class="btn btn--outline" href="planning.html">Voir le planning</a>
+    </div>
+  </section>
+
+  <div class="prefoot-marquee">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__word marquee__word--outline">Pole Dance Studio</span>
+        <span class="marquee__word marquee__word--outline">— Have Fun —</span>
+        <span class="marquee__word marquee__word--outline">Pole Dance Studio</span>
+        <span class="marquee__word marquee__word--outline">— Have Fun —</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <div class="site-footer__about">
+        <div class="site-footer__brand">
+          <img src="assets/images/logo-square-300.png" alt="" width="36" height="36" loading="lazy" decoding="async">
+          <span>Pole Dance Studio</span>
+        </div>
+        <p>Découvrez la magie du pole dance dans notre école. Fusion de la danse et du fitness, renforcement du corps et développement de la confiance.</p>
+        <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Merci ✓'">
+          <input type="email" placeholder="Votre email" aria-label="Email">
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ecole.html">L'école</a></li>
+          <li><a href="planning.html">Planning &amp; tarifs</a></li>
+          <li><a href="stages.html">Stages &amp; camps</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:poledancetours37@gmail.com">poledancetours37@gmail.com</a></li>
+          <li><a href="tel:+33783118183">07 83 11 81 83</a></li>
+          <li>France</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="https://instagram.com/poledancetours" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 Pole Dance Studio — Be Strong, Have Fun</span>
+      <div>
+        <a href="#">Mentions légales</a>
+        <a href="#">Cookies</a>
+        <a href="#">Vie privée</a>
+      </div>
+    </div>
+  </footer>
+
