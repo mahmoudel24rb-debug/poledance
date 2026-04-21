@@ -1,141 +1,90 @@
 # Export Pole Dance Studio pour Oxygen Builder 6.0
 
-Ce dossier contient les 6 pages du site au format « Code Block Oxygen ».
+Structure avec **Template globale** (header + footer + base partagés) et **6 pages** autonomes.
 
 ## Structure
 
 ```
 oxygen-export/
-├── head.html           ← À coller UNE FOIS dans Oxygen > Header (Google Fonts)
-├── home.html + home.css + home.js
-├── ecole.html + ecole.css + ecole.js
-├── planning.html + planning.css + planning.js
-├── stages.html + stages.css + stages.js
-├── news.html + news.css + news.js
-└── contact.html + contact.css + contact.js
+├── head.html                 ← Google Fonts (à mettre dans <head> global Oxygen)
+├── template/
+│   ├── header.html           ← Nav HTML
+│   ├── header.css            ← CSS spécifique nav (sticky, burger, responsive)
+│   ├── header.js             ← Burger menu toggle
+│   ├── footer.html           ← Footer HTML
+│   ├── footer.css            ← CSS spécifique footer (grid, newsletter)
+│   ├── footer.js             ← Newsletter form stub
+│   ├── base.css              ← CSS partagé (tokens, typo, boutons, sections, cards)
+│   └── base.js               ← Contact form stub
+└── pages/
+    ├── home.html             ← Contenu page Accueil (sans header/footer)
+    ├── ecole.html
+    ├── planning.html
+    ├── stages.html
+    ├── news.html
+    └── contact.html
 ```
 
-Chaque page est autonome : ses 3 fichiers vont dans les 3 onglets d'un Code Block Oxygen.
+---
+
+## Étape 1 — Google Fonts
+
+Oxygen > **Settings > Global Settings > Custom Scripts > Header** → coller `head.html`.
 
 ---
 
-## Étape 1 — Polices Google Fonts (une seule fois, globalement)
+## Étape 2 — Créer la Template globale
 
-1. Oxygen > **Settings** > **Global Settings** > **Custom Scripts** > onglet **Header**
-2. Colle le contenu de `head.html`
+1. Oxygen > **Templates > Add New** → nom `Main Template`
+2. **Apply to** : All Pages
+3. Dans la template, ajouter dans l'ordre :
+   - **Code Block 1 — HEADER**
+     - Onglet PHP/HTML : `template/header.html`
+     - Onglet CSS : `template/header.css`
+     - Onglet JavaScript : `template/header.js`
+   - **Inner Content** (l'élément Oxygen qui injecte le contenu de chaque page)
+   - **Code Block 2 — FOOTER**
+     - Onglet PHP/HTML : `template/footer.html`
+     - Onglet CSS : `template/footer.css`
+     - Onglet JavaScript : `template/footer.js`
+4. Ajouter un **Code Block 3 — BASE** (peut être placé n'importe où dans la template, son HTML sera vide) :
+   - Onglet PHP/HTML : laisser vide
+   - Onglet CSS : `template/base.css` (le gros CSS partagé : tokens, typo, boutons, toutes les sections, toutes les cards, responsive, a11y)
+   - Onglet JavaScript : `template/base.js` (contact form stub)
+5. **Save**
 
-> Alternative : **Settings** > **Code Snippets** > **Header** (Oxygen 6.0)
-
-Si tu ne fais pas cette étape, les polices Sora/Inter/Work Sans ne se chargeront pas et le rendu sera en police système par défaut.
-
----
-
-## Étape 2 — Uploader les médias
-
-Upload tous les fichiers de `assets/images/` (+ la vidéo `hero-video.mp4`) dans la **Médiathèque WordPress**. Note l'URL de chaque fichier uploadé, tu en auras besoin à l'étape 4.
-
-Fichiers à uploader :
-- `amandine-portrait-ecole.jpg`
-- `amandine-portrait-home.jpg`
-- `home-cours-pole-dance.jpg`
-- `studio-parc-beauregard.jpg`
-- `logo-square-300.png`
-- `planning-2025-2026.png`
-- `hero-video.mp4`
+> Alternative plus propre pour `base.css` : **Oxygen > Manage > Stylesheets > Add New** → y coller `base.css`. Ça évite d'avoir un Code Block vide juste pour porter le CSS.
 
 ---
 
-## Étape 3 — Créer les pages dans WordPress
+## Étape 3 — Créer les 6 pages
 
 Pour chaque page (Accueil, École, Planning, Stages, News, Contact) :
 
-1. **Pages > Add New** dans WordPress
-2. Ouvrir avec **Oxygen**
-3. Cliquer **+ Add** > chercher **Code Block** > l'ajouter à la page
-4. Ouvrir le Code Block :
-   - Onglet **PHP/HTML** → coller le contenu de `[page].html`
-   - Onglet **CSS** → coller le contenu de `[page].css`
-   - Onglet **JavaScript** → coller le contenu de `[page].js`
-5. **Save**
+1. **Pages > Add New** avec le bon slug :
+   - Accueil → définir comme page d'accueil (Réglages > Lecture)
+   - École → `ecole`
+   - Planning → `planning`
+   - Stages → `stages`
+   - News → `news`
+   - Contact → `contact`
+2. Ouvrir avec **Oxygen** (la template Main s'applique déjà, le header + footer sont là)
+3. Ajouter un **Code Block** dans l'Inner Content
+4. Onglet PHP/HTML : coller `pages/[nom-page].html`
+5. Onglets CSS et JS : **vides** (tout est dans la template)
+6. **Save**
 
 ---
 
-## Étape 4 — Remplacer les chemins d'images
+## Déjà fait dans l'export
 
-Dans chaque fichier `.html`, remplace les chemins `assets/images/xxx.jpg` par les URLs WordPress récupérées à l'étape 2.
+- ✅ URLs images/vidéo en `poledancestudio.fr/wp-content/uploads/2026/04/...` (formats `.webp` pour images)
+- ✅ Liens internes en slugs WP (`/`, `/ecole/`, `/planning/`, `/stages/`, `/news/`, `/contact/`)
+- ✅ Classe `is-active` sur lien "Accueil" dans header (à gérer dynamiquement si tu veux l'effet visuel sur chaque page — demande-moi)
 
-**Exemple** :
-```html
-<!-- Avant -->
-<img src="assets/images/amandine-portrait-home.jpg" ...>
+## Notes
 
-<!-- Après -->
-<img src="https://ton-site.fr/wp-content/uploads/2026/04/amandine-portrait-home.jpg" ...>
-```
-
-Liste des chemins à remplacer dans chaque page :
-- `assets/images/logo-square-300.png` (dans nav + footer, toutes les pages)
-- `assets/images/hero-video.mp4` (dans home.html uniquement)
-- `assets/images/home-cours-pole-dance.jpg`
-- `assets/images/amandine-portrait-home.jpg`
-- `assets/images/amandine-portrait-ecole.jpg`
-- `assets/images/studio-parc-beauregard.jpg`
-- `assets/images/planning-2025-2026.png` (dans planning.html uniquement)
-
-**Raccourci** : utilise Ctrl+H dans ton éditeur de texte pour remplacer `assets/images/` par ton URL WordPress avant de coller dans Oxygen.
-
----
-
-## Étape 5 — Liens entre pages
-
-Les liens internes utilisent `href="ecole.html"`, `href="planning.html"`, etc. Remplace-les par les slugs WordPress de tes pages :
-
-```html
-<!-- Avant -->
-<a href="ecole.html">L'école</a>
-
-<!-- Après -->
-<a href="/ecole/">L'école</a>
-```
-
-À remplacer dans chaque page :
-- `ecole.html` → `/ecole/`
-- `planning.html` → `/planning/`
-- `stages.html` → `/stages/`
-- `news.html` → `/news/`
-- `contact.html` → `/contact/`
-- `index.html` → `/` (racine)
-
----
-
-## Notes techniques
-
-### CSS dupliqué
-Le même CSS est dans les 6 fichiers `.css` (par design, selon la demande : chaque page autonome). Si tu veux mutualiser plus tard : extraire le CSS commun dans **Oxygen > Manage > Stylesheets** et retirer le contenu des onglets CSS de chaque Code Block.
-
-### JavaScript
-Le JS gère :
-- Le burger menu mobile
-- La fermeture auto du menu au clic sur un lien
-- L'envoi simulé du formulaire de contact (à brancher à un vrai endpoint plus tard)
-
-### Accessibilité
-- `prefers-reduced-motion` respecté (pas d'animations si l'utilisateur a désactivé)
-- `:focus-visible` avec outline violet
-- `aria-expanded` sur le burger menu
-
-### Responsive
-Breakpoints : 1200px / 900px / 640px / 480px. Mobile-first optimisé.
-
----
-
-## Contenu des pages
-
-| Fichier | Page |
-|---|---|
-| `home.html` | Accueil avec hero vidéo, 3 cartes « Pourquoi », 4 cours, feature Amandine, témoignages, CTA |
-| `ecole.html` | Bio Amandine, stats, infos studio |
-| `planning.html` | Image planning, 4 cours, tarifs (abonnements + cartes) |
-| `stages.html` | Stages intensifs + camps 4 jours + programme |
-| `news.html` | Grille Instagram + newsletter |
-| `contact.html` | Formulaire + coordonnées + FAQ |
+- Les **polices** (Sora/Inter/Work Sans) doivent être chargées via `head.html` (étape 1). Sans ça, tout passe en police système.
+- **Responsive** : breakpoints 1200/900/640/480px.
+- **Accessibilité** : `prefers-reduced-motion`, `:focus-visible`, `aria-expanded` sur burger.
+- **Performance** : lazy loading sur images hors viewport, fetchpriority high sur hero, preload Sora.

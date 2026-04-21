@@ -1,0 +1,92 @@
+/* Footer — Pole Dance Studio */
+
+.prefoot-marquee { border-block: 1px solid var(--border); opacity: 0.75; }
+.prefoot-marquee .marquee__word {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--text);
+  font-style: italic;
+  font-weight: 700;
+}
+.prefoot-marquee .marquee { border-block: 0; }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+  padding: 88px 0 36px;
+}
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: 1.6fr repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+.site-footer h4 { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: 22px; font-weight: 500; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.site-footer a { color: var(--text-muted); font-size: 14px; }
+.site-footer a:hover { color: var(--accent); }
+.site-footer .about-col p, .site-footer__about p { font-size: 14px; max-width: 36ch; }
+.site-footer__brand {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 22px;
+  font-family: var(--font-display); letter-spacing: .16em; text-transform: uppercase; font-weight: 600; font-size: 15px;
+}
+.site-footer__brand img { width: 40px; height: 40px; border-radius: 10px; }
+
+.newsletter {
+  display: flex; gap: 10px; padding: 6px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: rgba(255,255,255,.03);
+  max-width: 380px;
+  margin-top: 22px;
+}
+.newsletter input {
+  background: transparent; border: 0; color: var(--text);
+  padding: 10px 16px; flex: 1; outline: none; font: inherit; font-size: 13px;
+}
+.newsletter button {
+  background: var(--text); color: var(--bg);
+  padding: 10px 20px; border-radius: 999px;
+  font-size: 11px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.newsletter button:hover { background: var(--accent); color: var(--bg); }
+
+.site-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  letter-spacing: .08em;
+  color: var(--text-dim);
+  flex-wrap: wrap;
+}
+.site-footer__bottom a { color: var(--text-dim); margin-left: 18px; }
+.site-footer__bottom a:hover { color: var(--text); }
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .site-footer__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .site-footer { padding: 56px 0 28px; }
+  .site-footer__grid { grid-template-columns: 1fr; gap: 32px; margin-bottom: 32px; }
+  .site-footer__about p { font-size: 13px; max-width: none; }
+  .site-footer__bottom { flex-direction: column; gap: 10px; }
+  .site-footer__bottom a { margin-left: 0; }
+  .newsletter {
+    flex-direction: column;
+    padding: 0;
+    border: 0;
+    gap: 10px;
+    max-width: 100%;
+  }
+  .newsletter input {
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    padding: 14px 18px;
+    font-size: 16px;
+  }
+  .newsletter button { width: 100%; padding: 14px; }
+}
